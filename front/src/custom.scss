@@ -1,0 +1,22 @@
+// Override default variables before the import
+$body-bg: #f4f6f9;
+
+$theme-colors: (
+  'danger': #bd3128,
+  'primary': #00aeef,
+  'success': #00b894,
+  'dark': #2b3035,
+  'info': #52a453,
+  'warning': #fbd55c,
+  'purple': #3b3b98,
+  'white': #ffffff,
+  'light': #eff3f6,
+  'gray': #dfe6e9,
+);
+
+$enable-caret: true;
+$enable-rounded: false;
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~antd/dist/antd.css';
