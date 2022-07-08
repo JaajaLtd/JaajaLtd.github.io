@@ -1,68 +1,68 @@
 [
     {
         "id": "1",
-        "postImg": "blog_c-02.jpg",
+        "imgUrl": "course-1.jpg",
         "authorImg": "author.jpg",
-        "authorName": "Medison Azar",
-        "postLink": "/blog-details",
-        "postDate": "April 23, 2020",
-        "postTitle": "Ratione omnis consequuntur placeae consol fugit eaque vitae hic.",
-        "postDesc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, quos commodi Quasi laudantium, voluptatem velit necessitatibus.",
-        "authorLink": "/"
+        "authorName": "John Doe",
+        "authorCourses": "13 Courses",
+        "price": "$20",
+        "courseTitle": "Php & mySql Programming",
+        "courseDesc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur accusamus hic ea in autem debitis minima.",
+        "courseLink": "/course-details"
     },
     {
         "id": "2",
-        "postImg": "blog_c-03.jpg",
+        "imgUrl": "course-2.jpg",
         "authorImg": "author.jpg",
-        "authorName": "Medison Azar",
-        "postLink": "/blog-details",
-        "postDate": "April 23, 2020",
-        "postTitle": "Ratione omnis consequuntur placeae consol fugit eaque vitae hic.",
-        "postDesc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, quos commodi Quasi laudantium, voluptatem velit necessitatibus.",
-        "authorLink": "/"
+        "authorName": "Jara Sen",
+        "authorCourses": "21 Courses",
+        "price": "$13",
+        "courseTitle": "Microsoft Excel for Beginner",
+        "courseDesc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur accusamus hic ea in autem debitis minima.",
+        "courseLink": "/course-details"
     },
     {
         "id": "3",
-        "postImg": "blog_c-05.jpg",
+        "imgUrl": "course-3.jpg",
         "authorImg": "author.jpg",
-        "authorName": "Medison Azar",
-        "postLink": "/blog-details",
-        "postDate": "April 23, 2020",
-        "postTitle": "Ratione omnis consequuntur placeae consol fugit eaque vitae hic.",
-        "postDesc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, quos commodi Quasi laudantium, voluptatem velit necessitatibus.",
-        "authorLink": "/"
+        "authorName": "Kim Chang",
+        "authorCourses": "26 Courses",
+        "price": "$19",
+        "courseTitle": "Digital Marketing Course",
+        "courseDesc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur accusamus hic ea in autem debitis minima.",
+        "courseLink": "/course-details"
     },
     {
         "id": "4",
-        "postImg": "blog_c-06.jpg",
+        "imgUrl": "course-4.jpg",
         "authorImg": "author.jpg",
-        "authorName": "Medison Azar",
-        "postLink": "/blog-details",
-        "postDate": "April 23, 2020",
-        "postTitle": "Ratione omnis consequuntur placeae consol fugit eaque vitae hic.",
-        "postDesc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, quos commodi Quasi laudantium, voluptatem velit necessitatibus.",
-        "authorLink": "/"
+        "authorName": "Jim Hunt",
+        "authorCourses": "09 Courses",
+        "price": "$15",
+        "courseTitle": "Zero to Hero in Python 3",
+        "courseDesc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur accusamus hic ea in autem debitis minima.",
+        "courseLink": "/course-details"
     },
     {
         "id": "5",
-        "postImg": "blog_c-07.jpg",
+        "imgUrl": "course-5.jpg",
         "authorImg": "author.jpg",
-        "authorName": "Medison Azar",
-        "postLink": "/blog-details",
-        "postDate": "April 23, 2020",
-        "postTitle": "Ratione omnis consequuntur placeae consol fugit eaque vitae hic.",
-        "postDesc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, quos commodi Quasi laudantium, voluptatem velit necessitatibus.",
-        "authorLink": "/"
+        "authorName": "Sara Kim",
+        "authorCourses": "17 Courses",
+        "price": "$21",
+        "courseTitle": "React JS, Angular & Vue JS",
+        "courseDesc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur accusamus hic ea in autem debitis minima.",
+        "courseLink": "/course-details"
     },
     {
         "id": "6",
-        "postImg": "blog_c-08.jpg",
+        "imgUrl": "course-6.jpg",
         "authorImg": "author.jpg",
-        "authorName": "Medison Azar",
-        "postLink": "/blog-details",
-        "postDate": "April 23, 2020",
-        "postTitle": "Ratione omnis consequuntur placeae consol fugit eaque vitae hic.",
-        "postDesc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, quos commodi Quasi laudantium, voluptatem velit necessitatibus.",
-        "authorLink": "/"
+        "authorName": "Shon Doe",
+        "authorCourses": "31 Courses",
+        "price": "$24",
+        "courseTitle": "Laravel API Development",
+        "courseDesc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur accusamus hic ea in autem debitis minima.",
+        "courseLink": "/course-details"
     }
 ]
