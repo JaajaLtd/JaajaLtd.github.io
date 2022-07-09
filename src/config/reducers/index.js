@@ -11,6 +11,7 @@ import enrollment from './enrollment';
 import registration from './registration';
 import result from './result';
 import paymentReference from './payment/paymentReference';
+import scholarship from './scholarship';
 
 const appReducer = combineReducers({
   setting,
@@ -23,6 +24,7 @@ const appReducer = combineReducers({
   myTransaction,
   myInvoice,
   result,
+  scholarship,
 });
 
 const rootReducer = (state, actions) => {

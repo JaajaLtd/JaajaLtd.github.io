@@ -6,6 +6,7 @@ import auth from './auth';
 import enrollment from './enrollment';
 import paymentReference from './payment/paymentReference';
 import result from './result';
+import scholarship from './scholarship';
 
 const rootSaga = function* root() {
   yield all([
@@ -16,6 +17,7 @@ const rootSaga = function* root() {
     ...paymentReference,
     ...payment,
     ...result,
+    ...scholarship    
   ]);
 };
 

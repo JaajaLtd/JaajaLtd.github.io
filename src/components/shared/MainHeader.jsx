@@ -77,7 +77,6 @@ const MainHeader = () => {
           <Menu
             key={MenuList.ProfileData.action}
             mode="horizontal"
-            inlineCollapsed={false}
           >
             <SubMenu
               title={
@@ -102,6 +101,7 @@ const MainHeader = () => {
               }
               key="profile"
               className="px-0"
+              icon={<UserOutlined />}
             >
               <Menu.Item
                 key="my-profile"
@@ -121,7 +121,7 @@ const MainHeader = () => {
               </Menu.Item>
             </SubMenu>
             <Menu.Item
-              key="SignOut"
+              key="SignOut2"
               icon={loggingOut ? <LoadingOutlined /> : <LogoutOutlined />}
               onClick={() => dispatch(authActions.logoutUser())}
               className="font600 px-2"

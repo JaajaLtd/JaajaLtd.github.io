@@ -24,6 +24,28 @@ import MenuList from '../../config/routes/MenuList';
 
 const sideBarMenu = [
   {
+    title: 'Scholarships',
+    key: 'scholarships',
+    icon: <ReconciliationOutlined />,
+    routes: [
+      {
+        ...MenuList.Scholarships,
+        icon: <FaRegEdit />,
+      },
+    ],
+  },
+  {
+    title: 'Institutions',
+    key: 'institution',
+    icon: <ReconciliationOutlined />,
+    routes: [
+      {
+        ...MenuList.Institutions,
+        icon: <FaRegEdit />,
+      }
+    ],
+  },
+  {
     title: 'Payments & Invoices',
     key: 'payments',
     icon: <DollarCircleOutlined />,

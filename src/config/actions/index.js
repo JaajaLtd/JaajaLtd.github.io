@@ -7,6 +7,7 @@ import payment from './payment'
 import enrollment from './enrollment'
 import paymentReference from './payment/paymentReference'
 import server from './app/server'
+import scholarship from './scholarship';
 
 const authActions = {
   ...auth
@@ -36,6 +37,11 @@ const serverActions = {
   ...server
 }
 
-export { appActions, paymentActions, resultActions, settingActions, serverActions, paymentReferenceActions, registrationActions, enrollmentActions, authActions };
+//Scholarship stuff
+const scholarshipActions = {
+  ...scholarship
+}
+
+export { appActions, paymentActions, resultActions, settingActions, serverActions, paymentReferenceActions,  registrationActions, enrollmentActions, authActions, scholarshipActions };
 
 export default appActions;

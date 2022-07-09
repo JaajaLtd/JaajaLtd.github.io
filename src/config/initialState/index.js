@@ -6,6 +6,7 @@ import paymentReference from './paymentReference';
 import registration from './registration';
 import payment from './payment';
 import result from './result';
+import scholarship from './scholarship';
 
 const initialStates = {
   ...app,
@@ -16,6 +17,7 @@ const initialStates = {
   ...registration,
   ...payment,
   ...result,
+  ...scholarship
 };
 
 export default initialStates;

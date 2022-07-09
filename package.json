@@ -1,6 +1,6 @@
 {
   "homepage": "https://JaajaLtd.github.io/hesmis-front",
-  "name": "ehealth-dashboard",
+  "name": "hesmis-dashboard",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:3123",
