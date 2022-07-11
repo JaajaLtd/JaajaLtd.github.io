@@ -64,7 +64,7 @@ export const Styles = styled.div`
 
                             span {
                                 font-size     : 48px;
-                                color         : ${colors.green};
+                                color         : ${colors.yellow};
                                 font-weight: 600;
                                 display       : block;
                                 letter-spacing: 0;
@@ -129,7 +129,7 @@ export const Styles = styled.div`
                                     font-size       : 14px;
                                     padding         : 15px 20px;
                                     color           : ${colors.black1};
-                                    border          : 2px solid ${colors.green};
+                                    border          : 2px solid ${colors.yellow};
                                     border-radius : 5px;
 
                                     &::placeholder {
@@ -154,7 +154,7 @@ export const Styles = styled.div`
 
                             p.form-control.success {
                                 input {
-                                    border: 2px solid ${colors.green};
+                                    border: 2px solid ${colors.yellow};
                                 }
 
                                 &::before {
@@ -162,7 +162,7 @@ export const Styles = styled.div`
                                     content    : "\f058";
                                     font-family: "Line Awesome Free";
                                     font-size  : 24px;
-                                    color      : ${colors.green};
+                                    color      : ${colors.yellow};
                                     font-weight: 900;
                                     top        : 9px;
                                     right      : 120px;
@@ -195,7 +195,7 @@ export const Styles = styled.div`
                             button {
                                 font-size  : 14px;
                                 color      : #fff;
-                                background : ${colors.gr_bg};
+                                background : ${colors.yl_bg};
                                 width: 100px;
                                 height: 40px;
                                 position: absolute;
@@ -273,14 +273,14 @@ export const Styles = styled.div`
                                     }
 
                                     &:hover {
-                                        background-color: ${colors.green} !important;
+                                        background-color: ${colors.yellow} !important;
 
                                         &:before {
-                                            border-bottom-color: ${colors.green} !important;
+                                            border-bottom-color: ${colors.yellow} !important;
                                         }
 
                                         &:after {
-                                            border-top-color: ${colors.green} !important;
+                                            border-top-color: ${colors.yellow} !important;
                                         }
                                     }
                                 }

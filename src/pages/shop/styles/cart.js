@@ -52,7 +52,7 @@ export const Styles = styled.div`
                                     color: ${colors.black1};
                                     font-weight : 500;
                                     &:hover {
-                                        color: ${colors.green};
+                                        color: ${colors.yellow};
                                     }
                                 }
                             }
@@ -73,7 +73,7 @@ export const Styles = styled.div`
                                     border-radius: 5px;
                                     &:focus {
                                         box-shadow : none;
-                                        border-color: ${colors.green};
+                                        border-color: ${colors.yellow};
                                     }
                                 }
                             }
@@ -110,13 +110,13 @@ export const Styles = styled.div`
                                 }
                                 &:focus {
                                     box-shadow : none;
-                                    border-color: ${colors.green};
+                                    border-color: ${colors.yellow};
                                 }
                             }
                             button {
                                 font-size: 14px;
                                 color: #ffffff;
-                                background: ${colors.gr_bg};
+                                background: ${colors.yl_bg};
                                 width: 120px;
                                 height: 45px;
                                 border: none;
@@ -132,7 +132,7 @@ export const Styles = styled.div`
                             display: inline-block;
                             font-size: 14px;
                             color: #ffffff;
-                            background: ${colors.gr_bg};
+                            background: ${colors.yl_bg};
                             width: 120px;
                             height: 45px;
                             text-align : center;
@@ -164,7 +164,7 @@ export const Styles = styled.div`
                         &:before {
                             position: absolute;
                             content: "";
-                            background: ${colors.green};
+                            background: ${colors.yellow};
                             width: 50px;
                             height: 2px;
                             bottom: 0;
@@ -211,7 +211,7 @@ export const Styles = styled.div`
                     button.checkout-btn {
                         font-size: 16px;
                         color: #ffffff;
-                        background: ${colors.gr_bg};
+                        background: ${colors.yl_bg};
                         display: inline-block;
                         width: 100%;
                         height: 45px;

@@ -28,7 +28,7 @@ export const Styles = styled.div`
             margin-bottom: 30px;
 
             .box-icon {
-                background  : ${colors.green};
+                background  : ${colors.yellow};
                 height      : 36px;
                 text-align  : center;
                 margin-right: 20px;
@@ -61,7 +61,7 @@ export const Styles = styled.div`
                     border-style       : solid;
                     border-top-color   : transparent;
                     border-right-color : transparent;
-                    border-bottom-color: ${colors.green};
+                    border-bottom-color: ${colors.yellow};
                     border-left-color  : transparent;
                     top                : -30px;
                     left               : 0;
@@ -83,7 +83,7 @@ export const Styles = styled.div`
                     position           : absolute;
                     border-width       : 15px 30px;
                     border-style       : solid;
-                    border-top-color   : ${colors.green};
+                    border-top-color   : ${colors.yellow};
                     border-right-color : transparent;
                     border-bottom-color: transparent;
                     border-left-color  : transparent;

@@ -16,7 +16,7 @@ export const Styles = styled.div`
             &:before {
                 position : absolute;
                 content : "";
-                background : ${colors.green};
+                background : ${colors.yellow};
                 width : 50px;
                 height: 2px;
                 bottom : 0;
@@ -38,8 +38,8 @@ export const Styles = styled.div`
                 border-radius: 5px;
                 &:hover {
                     color : #ffffff;
-                    background : ${colors.gr_bg};
-                    border-color : ${colors.green};
+                    background : ${colors.yl_bg};
+                    border-color : ${colors.yellow};
                 }
             }
         }

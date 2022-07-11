@@ -86,7 +86,7 @@ export const Styles = styled.div`
                             margin-bottom: 12px;
 
                             &:hover {
-                                color: ${colors.green};
+                                color: ${colors.yellow};
                             }
                         }
                     }
@@ -110,7 +110,7 @@ export const Styles = styled.div`
 
                                 i {
                                     font-size     : 16px;
-                                    color         : ${colors.green};
+                                    color         : ${colors.yellow};
                                     vertical-align: text-bottom;
                                     margin-right  : 3px;
                                 }
@@ -241,7 +241,7 @@ export const Styles = styled.div`
                         &:before {
                             position: absolute;
                             content: "";
-                            background: ${colors.green};
+                            background: ${colors.yellow};
                             width: 50px;
                             height: 2px;
                             bottom: 0;
@@ -254,7 +254,7 @@ export const Styles = styled.div`
                             display      : inline-block;
 
                             &:hover {
-                                color: ${colors.green};
+                                color: ${colors.yellow};
                             }
                         }
                     }
@@ -287,15 +287,15 @@ export const Styles = styled.div`
 
                     a.details-btn {
                         font-size : 13px;
-                        color : ${colors.green};
+                        color : ${colors.yellow};
                         border : 1px solid ${colors.border3};
                         padding: 7px 15px;
                         border-radius: 5px;
                         font-weight: 500;
                         &:hover {
                             color : #ffffff;
-                            background : ${colors.gr_bg};
-                            border-color : ${colors.green};
+                            background : ${colors.yl_bg};
+                            border-color : ${colors.yellow};
                         }
                     }
                 }
@@ -484,7 +484,7 @@ export const Styles = styled.div`
                             }
                         }
                         a.nav-link.active {
-                            background : ${colors.gr_bg};
+                            background : ${colors.yl_bg};
                             color : #ffffff;
                         }
                     }
@@ -500,7 +500,7 @@ export const Styles = styled.div`
                             &:before {
                                 position: absolute;
                                 content: "";
-                                background: ${colors.green};
+                                background: ${colors.yellow};
                                 width: 50px;
                                 height: 2px;
                                 bottom: 0;
@@ -536,7 +536,7 @@ export const Styles = styled.div`
                                     margin-bottom : 10px;
                                     i {
                                         font-size : 20px;
-                                        color: ${colors.green};
+                                        color: ${colors.yellow};
                                         float: left;
                                         height: 40px;
                                         line-height: 27px;
@@ -559,7 +559,7 @@ export const Styles = styled.div`
                                     margin-bottom: 15px;
                                     i {
                                         float: left;
-                                        color: ${colors.green};
+                                        color: ${colors.yellow};
                                         border: 1px solid ${colors.border3};
                                         width: 35px;
                                         height: 35px;
@@ -620,14 +620,14 @@ export const Styles = styled.div`
                                         }
 
                                         &:hover {
-                                            background-color: ${colors.green} !important;
+                                            background-color: ${colors.yellow} !important;
 
                                             &:before {
-                                                border-bottom-color: ${colors.green} !important;
+                                                border-bottom-color: ${colors.yellow} !important;
                                             }
 
                                             &:after {
-                                                border-top-color: ${colors.green} !important;
+                                                border-top-color: ${colors.yellow} !important;
                                             }
                                         }
                                     }
@@ -717,7 +717,7 @@ export const Styles = styled.div`
                                 &:before {
                                     position: absolute;
                                     content: "";
-                                    background: ${colors.green};
+                                    background: ${colors.yellow};
                                     width: 50px;
                                     height: 2px;
                                     bottom: 0;
@@ -748,7 +748,7 @@ export const Styles = styled.div`
                                 &:before {
                                     position: absolute;
                                     content: "";
-                                    background: ${colors.green};
+                                    background: ${colors.yellow};
                                     width: 50px;
                                     height: 2px;
                                     bottom: 0;
@@ -794,8 +794,8 @@ export const Styles = styled.div`
                                                 color: ${colors.text3};
                                                 margin-right: 20px;
                                                 i {
-                                                    color: ${colors.green};
-                                                    border: 1px solid ${colors.green};
+                                                    color: ${colors.yellow};
+                                                    border: 1px solid ${colors.yellow};
                                                     font-size: 22px;
                                                     width: 30px;
                                                     height: 30px;
@@ -848,7 +848,7 @@ export const Styles = styled.div`
                             &:before {
                                 position: absolute;
                                 content: "";
-                                background: ${colors.green};
+                                background: ${colors.yellow};
                                 width: 50px;
                                 height: 2px;
                                 bottom: 0;
@@ -945,14 +945,14 @@ export const Styles = styled.div`
                                                         }
 
                                                         &:hover {
-                                                            background-color: ${colors.green} !important;
+                                                            background-color: ${colors.yellow} !important;
 
                                                             &:before {
-                                                                border-bottom-color: ${colors.green} !important;
+                                                                border-bottom-color: ${colors.yellow} !important;
                                                             }
 
                                                             &:after {
-                                                                border-top-color: ${colors.green} !important;
+                                                                border-top-color: ${colors.yellow} !important;
                                                             }
                                                         }
                                                     }
@@ -1049,7 +1049,7 @@ export const Styles = styled.div`
                                 &:before {
                                     position: absolute;
                                     content: "";
-                                    background: ${colors.green};
+                                    background: ${colors.yellow};
                                     width: 50px;
                                     height: 2px;
                                     bottom: 0;
@@ -1107,7 +1107,7 @@ export const Styles = styled.div`
                                         .reply-btn {
                                             button {
                                                 font-size : 14px;
-                                                color: ${colors.green};
+                                                color: ${colors.yellow};
                                                 background : transparent;
                                                 border : 1px solid ${colors.border3};
                                                 font-weight: 500;
@@ -1120,8 +1120,8 @@ export const Styles = styled.div`
                                                 }
                                                 &:hover {
                                                     color : #ffffff;
-                                                    background : ${colors.gr_bg};
-                                                    border-color : ${colors.green};
+                                                    background : ${colors.yl_bg};
+                                                    border-color : ${colors.yellow};
                                                 }
                                             }
                                         }
@@ -1152,7 +1152,7 @@ export const Styles = styled.div`
                                 &:before {
                                     position: absolute;
                                     content: "";
-                                    background: ${colors.green};
+                                    background: ${colors.yellow};
                                     width: 50px;
                                     height: 2px;
                                     bottom: 0;
@@ -1187,7 +1187,7 @@ export const Styles = styled.div`
                     &:before {
                         position: absolute;
                         content: "";
-                        background: ${colors.green};
+                        background: ${colors.yellow};
                         width: 50px;
                         height: 2px;
                         bottom: 0;
@@ -1209,7 +1209,7 @@ export const Styles = styled.div`
                         font-weight: 500;
                         i {
                             font-size : 20px;
-                            color: ${colors.green};
+                            color: ${colors.yellow};
                             vertical-align: top;
                             margin-right : 2px;
                         }
@@ -1233,7 +1233,7 @@ export const Styles = styled.div`
                 button.enroll-btn {
                     font-size: 16px;
                     color: #fff;
-                    background: ${colors.gr_bg};
+                    background: ${colors.yl_bg};
                     display: inline-block;
                     width: 100%;
                     height: 40px;

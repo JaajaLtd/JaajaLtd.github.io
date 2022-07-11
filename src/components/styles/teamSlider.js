@@ -70,7 +70,7 @@ export const Styles = styled.div`
                                     transition : all 0.2s ease;
 
                                     &:hover {
-                                        background-color: ${colors.green} !important;
+                                        background-color: ${colors.yellow} !important;
                                     }
                                 }
 
@@ -105,7 +105,7 @@ export const Styles = styled.div`
                 }
 
                 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-                    background: ${colors.green};
+                    background: ${colors.yellow};
                 }
             }
         }

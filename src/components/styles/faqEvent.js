@@ -14,7 +14,7 @@ export const Styles = styled.div`
                     margin-bottom : 37px;
 
                     span {
-                        color: ${colors.green};
+                        color: ${colors.yellow};
                     }
 
                     @media(max-width: 575px) {
@@ -41,7 +41,7 @@ export const Styles = styled.div`
                         position  : absolute;
                         width     : 70px;
                         height    : 70px;
-                        background: ${colors.green};
+                        background: ${colors.yellow};
                         top       : 0;
                         left      : 0;
                         border-radius : 50% 3px 50% 50%;
@@ -75,7 +75,7 @@ export const Styles = styled.div`
                             margin-bottom: 10px;
 
                             &:hover {
-                                color: ${colors.green};
+                                color: ${colors.yellow};
                             }
                         }
                     }
@@ -91,7 +91,7 @@ export const Styles = styled.div`
                             i {
                                 font-size   : 15px;
                                 margin-right: 3px;
-                                color       : ${colors.green};
+                                color       : ${colors.yellow};
                             }
                         }
                     }
@@ -129,7 +129,7 @@ export const Styles = styled.div`
                     margin-bottom : 45px;
 
                     span {
-                        color: ${colors.green};
+                        color: ${colors.yellow};
                     }
 
                     @media(max-width: 575px) {
@@ -154,7 +154,7 @@ export const Styles = styled.div`
                         position     : relative;
 
                         div.accordion-icon {
-                            background  : ${colors.green};
+                            background  : ${colors.yellow};
                             height      : 18px;
                             text-align  : center;
                             float       : left;
@@ -176,7 +176,7 @@ export const Styles = styled.div`
                                 border-style       : solid;
                                 border-top-color   : transparent;
                                 border-right-color : transparent;
-                                border-bottom-color: ${colors.green};
+                                border-bottom-color: ${colors.yellow};
                                 border-left-color  : transparent;
                                 top                : -16px;
                                 left               : 0;
@@ -188,7 +188,7 @@ export const Styles = styled.div`
                                 position           : absolute;
                                 border-width       : 8px 16px;
                                 border-style       : solid;
-                                border-top-color   : ${colors.green};
+                                border-top-color   : ${colors.yellow};
                                 border-right-color : transparent;
                                 border-bottom-color: transparent;
                                 border-left-color  : transparent;

@@ -25,7 +25,7 @@ export const Styles = styled.div`
                     color    : ${colors.black1};
                     font-weight: 600;
                     span {
-                        color    : ${colors.green};
+                        color    : ${colors.yellow};
                     }
 
                     @media(max-width: 575px) {
@@ -49,7 +49,7 @@ export const Styles = styled.div`
                 }
                 a {
                     font-size: 18px;
-                    background : ${colors.gr_bg};
+                    background : ${colors.yl_bg};
                     color : #ffffff;
                     padding: 12px 30px;
                     font-weight: 500;

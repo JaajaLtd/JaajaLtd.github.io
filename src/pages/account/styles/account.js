@@ -23,7 +23,7 @@ export const Styles = styled.div`
                         &:before {
                             position: absolute;
                             content: "";
-                            background: ${colors.green};
+                            background: ${colors.yellow};
                             width: 50px;
                             height: 2px;
                             bottom: 0;
@@ -78,7 +78,7 @@ export const Styles = styled.div`
                             }
 
                             &:focus {
-                                border-color : ${colors.green};
+                                border-color : ${colors.yellow};
                             }
 
                             @media(max-width: 575px) {
@@ -98,7 +98,7 @@ export const Styles = styled.div`
 
                     p.form-control.success {
                         input {
-                            border: 2px solid ${colors.green};
+                            border: 2px solid ${colors.yellow};
                         }
 
                         &::before {
@@ -106,7 +106,7 @@ export const Styles = styled.div`
                             content    : "\f058";
                             font-family: "Line Awesome Free";
                             font-size  : 24px;
-                            color      : ${colors.green};
+                            color      : ${colors.yellow};
                             font-weight: 900;
                             top        : 34px;
                             right      : 10px;
@@ -139,7 +139,7 @@ export const Styles = styled.div`
                     button {
                         font-size  : 16px;
                         color      : #fff;
-                        background : ${colors.gr_bg};
+                        background : ${colors.yl_bg};
                         width      : 100%;
                         height     : 48px;
                         font-weight: 500;
@@ -188,9 +188,9 @@ export const Styles = styled.div`
                                     }
 
                                     &:checked {
-                                        background-color: ${colors.green};
-                                        background: ${colors.green} url("data:image/gif;base64,R0lGODlhCwAKAIABAP////3cnSH5BAEKAAEALAAAAAALAAoAAAIUjH+AC73WHIsw0UCjglraO20PNhYAOw==") 2px 2px no-repeat;
-                                        border-color : ${colors.green};
+                                        background-color: ${colors.yellow};
+                                        background: ${colors.yellow} url("data:image/gif;base64,R0lGODlhCwAKAIABAP////3cnSH5BAEKAAEALAAAAAALAAoAAAIUjH+AC73WHIsw0UCjglraO20PNhYAOw==") 2px 2px no-repeat;
+                                        border-color : ${colors.yellow};
                                     }
                                 }
                             }
@@ -199,7 +199,7 @@ export const Styles = styled.div`
                             margin-top: 3px;
                             a {
                                 font-size : 14px;
-                                color : ${colors.green};
+                                color : ${colors.yellow};
                                 font-weight : 500;
                                 &:hover {
                                     text-decoration : underline;
@@ -217,7 +217,7 @@ export const Styles = styled.div`
                             color     : ${colors.text3};
                             a {
                                 font-size : 14px;
-                                color : ${colors.green};
+                                color : ${colors.yellow};
                                 font-weight : 500;
                                 &:hover {
                                     text-decoration : underline;
@@ -246,7 +246,7 @@ export const Styles = styled.div`
                                         margin-right : 3px;
                                     }
                                     &:hover {
-                                        background: ${colors.green} !important;
+                                        background: ${colors.yellow} !important;
                                     }import { colors } from './../../../components/common/element/elements';
 
                                 }
@@ -298,7 +298,7 @@ export const Styles = styled.div`
                         &:before {
                             position: absolute;
                             content: "";
-                            background: ${colors.green};
+                            background: ${colors.yellow};
                             width: 50px;
                             height: 2px;
                             bottom: 0;
@@ -353,7 +353,7 @@ export const Styles = styled.div`
                             }
 
                             &:focus {
-                                border-color : ${colors.green};
+                                border-color : ${colors.yellow};
                             }
 
                             @media(max-width: 575px) {
@@ -373,7 +373,7 @@ export const Styles = styled.div`
 
                     p.form-control.success {
                         input {
-                            border: 2px solid ${colors.green};
+                            border: 2px solid ${colors.yellow};
                         }
 
                         &::before {
@@ -381,7 +381,7 @@ export const Styles = styled.div`
                             content    : "\f058";
                             font-family: "Line Awesome Free";
                             font-size  : 24px;
-                            color      : ${colors.green};
+                            color      : ${colors.yellow};
                             font-weight: 900;
                             top        : 34px;
                             right      : 10px;
@@ -414,7 +414,7 @@ export const Styles = styled.div`
                     button {
                         font-size  : 16px;
                         color      : #fff;
-                        background : ${colors.gr_bg};
+                        background : ${colors.yl_bg};
                         width      : 100%;
                         height     : 48px;
                         font-weight: 500;
@@ -444,7 +444,7 @@ export const Styles = styled.div`
                         color     : ${colors.text3};
                         a {
                             font-size : 14px;
-                            color : ${colors.green};
+                            color : ${colors.yellow};
                             font-weight : 500;
                             &:hover {
                                 text-decoration : underline;

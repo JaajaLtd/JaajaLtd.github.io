@@ -109,7 +109,7 @@ export const Styles = styled.div`
                 }
 
                 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-                    background: ${colors.green};
+                    background: ${colors.yellow};
                 }
             }
         }

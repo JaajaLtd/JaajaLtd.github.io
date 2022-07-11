@@ -20,7 +20,7 @@ export const Styles = styled.div`
                     span {
                         position: absolute;
                         content : '';
-                        background : ${colors.gr_bg};
+                        background : ${colors.yl_bg};
                         width: 55px;
                         height: 55px;
                         text-align: center;
@@ -51,9 +51,9 @@ export const Styles = styled.div`
                         left : 100%;
                         z-index : 1;
                         background: transparent;
-                        border : 2px solid ${colors.green};
+                        border : 2px solid ${colors.yellow};
                         font-size: 13px;
-                        color: ${colors.green};
+                        color: ${colors.yellow};
                         font-weight: 600;
                         text-transform: uppercase;
                         width: 120px;
@@ -63,7 +63,7 @@ export const Styles = styled.div`
                         text-align: center;
                         transition: 0.2s ease;
                         &:hover {
-                            background: ${colors.gr_bg};
+                            background: ${colors.yl_bg};
                             color : #ffffff;
                         }
 
@@ -155,7 +155,7 @@ export const Styles = styled.div`
                                 color : ${colors.black1};
                                 font-weight: 600;
                                 &:hover {
-                                    color : ${colors.green};
+                                    color : ${colors.yellow};
                                 }
                             }
                         }
@@ -179,7 +179,7 @@ export const Styles = styled.div`
                     .pro-price {
                         p {
                             font-size : 16px;
-                            color: ${colors.green};
+                            color: ${colors.yellow};
                             font-weight: 500;
                         }
                     }

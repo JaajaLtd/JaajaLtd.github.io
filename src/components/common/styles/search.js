@@ -78,7 +78,7 @@ export const Styles = styled.div`
                     top      : 25px;
                     right    : -12px;
                     font-size: 26px;
-                    color    : ${colors.green};
+                    color    : ${colors.yellow};
                     cursor   : pointer;
                 }
             }

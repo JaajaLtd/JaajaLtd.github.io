@@ -40,7 +40,7 @@ export const Styles = styled.div`
             position: relative;
 
             .counter-icon {
-                border      : 1px dashed ${colors.green};
+                border      : 1px dashed ${colors.yellow};
                 border-right: none;
                 width       : 95px;
                 height      : 85px;
@@ -51,7 +51,7 @@ export const Styles = styled.div`
 
                 i {
                     font-size: 52px;
-                    color    : ${colors.green};
+                    color    : ${colors.yellow};
 
                     @media(max-width: 991px) {
                         font-size: 36px;
@@ -66,7 +66,7 @@ export const Styles = styled.div`
                 &::before {
                     position    : absolute;
                     content     : '';
-                    border-right: 1px dashed ${colors.green};
+                    border-right: 1px dashed ${colors.yellow};
                     width       : 1px;
                     height      : 12px;
                     top         : 2px;
@@ -80,7 +80,7 @@ export const Styles = styled.div`
                 &::after {
                     position    : absolute;
                     content     : '';
-                    border-right: 1px dashed ${colors.green};
+                    border-right: 1px dashed ${colors.yellow};
                     width       : 1px;
                     height      : 12px;
                     bottom      : 2px;

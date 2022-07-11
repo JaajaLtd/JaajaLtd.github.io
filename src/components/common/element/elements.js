@@ -10,7 +10,10 @@ export const colors = {
     green2: "#00a76a",
     red: "#ff6f6f",
     purple: "#84479c",
-    yellow: "#fbab19",
+    yellow: "#fcb900",//yellow
+    yellow2: "#efb005",
+    yl_bg: "linear-gradient(90deg, #f1c84f 0%, #fcb900 100%)",
+    yl_bg2: "linear-gradient(90deg, #009444 0%, #11B67A 100%)",
     black1: "#182B49",
     black2: "#444444",
     text1: "#555555",

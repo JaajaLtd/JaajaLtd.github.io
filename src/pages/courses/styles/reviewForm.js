@@ -47,7 +47,7 @@ export const Styles = styled.div`
                 border-radius   : 5px;
 
                 &:focus {
-                    border-color: ${colors.green};
+                    border-color: ${colors.yellow};
                 }
 
                 &::placeholder {
@@ -67,7 +67,7 @@ export const Styles = styled.div`
                 border-radius   : 5px;
 
                 &:focus {
-                    border-color: ${colors.green};
+                    border-color: ${colors.yellow};
                 }
 
                 &::placeholder {
@@ -89,7 +89,7 @@ export const Styles = styled.div`
         p.form-control.success {
             textarea,
             input {
-                border: 2px solid ${colors.green};
+                border: 2px solid ${colors.yellow};
             }
 
             &::before {
@@ -97,7 +97,7 @@ export const Styles = styled.div`
                 content    : "\f058";
                 font-family: "Line Awesome Free";
                 font-size  : 24px;
-                color      : ${colors.green};
+                color      : ${colors.yellow};
                 font-weight: 900;
                 top        : 8px;
                 right      : 10px;
@@ -131,7 +131,7 @@ export const Styles = styled.div`
         button {
             font-size : 15px;
             color     : #fff;
-            background: ${colors.gr_bg};
+            background: ${colors.yl_bg};
             width     : 200px;
             height    : 50px;
             border    : none;

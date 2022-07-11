@@ -45,7 +45,7 @@ export const Styles = styled.div`
                 }
 
                 li.active {
-                    background: ${colors.gr_bg};
+                    background: ${colors.yl_bg};
                     color     : #ffffff;
                 }
 
@@ -129,7 +129,7 @@ export const Styles = styled.div`
                             margin-bottom: 12px;
 
                             &:hover {
-                                color: ${colors.green};
+                                color: ${colors.yellow};
                             }
                         }
                     }
@@ -153,7 +153,7 @@ export const Styles = styled.div`
 
                                 i {
                                     font-size     : 16px;
-                                    color         : ${colors.green};
+                                    color         : ${colors.yellow};
                                     vertical-align: text-bottom;
                                     margin-right  : 3px;
                                 }
@@ -190,7 +190,7 @@ export const Styles = styled.div`
             a {
                 font-size     : 15px;
                 color         : #fff;
-                background    : ${colors.gr_bg};
+                background    : ${colors.yl_bg};
                 display       : inline-block;
                 width         : 200px;
                 height        : 48px;

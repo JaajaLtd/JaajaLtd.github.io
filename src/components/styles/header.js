@@ -19,13 +19,13 @@ export const Styles = styled.div`
                         color    : ${colors.text4};
 
                         &:hover {
-                            color: ${colors.green};
+                            color: ${colors.yellow};
                         }
                     }
 
                     i {
                         font-size     : 20px;
-                        color         : ${colors.green};
+                        color         : ${colors.yellow};
                         vertical-align: bottom;
                         margin-right  : 5px;
                     }
@@ -54,7 +54,7 @@ export const Styles = styled.div`
                 li {
                     a {
                         font-size   : 14px;
-                        color       : ${colors.green};
+                        color       : ${colors.yellow};
                         margin-right: 10px;
 
                         &:hover {
@@ -100,7 +100,7 @@ export const Styles = styled.div`
 
                             &:hover {
                                 cursor: pointer;
-                                color : ${colors.green};
+                                color : ${colors.yellow};
                             }
                         }
 
@@ -160,13 +160,13 @@ export const Styles = styled.div`
 
                         i {
                             font-size     : 20px;
-                            color         : ${colors.green};
+                            color         : ${colors.yellow};
                             vertical-align: bottom;
                             margin-right  : 5px;
                         }
 
                         &:hover {
-                            color: ${colors.green};
+                            color: ${colors.yellow};
                         }
                     }
 
@@ -201,7 +201,7 @@ export const Styles = styled.div`
                 margin-right: 45px;
 
                 .box-icon {
-                    background  : ${colors.green};
+                    background  : ${colors.yellow};
                     height      : 21px;
                     text-align  : center;
                     margin-top  : 10px;
@@ -225,7 +225,7 @@ export const Styles = styled.div`
                         border-style       : solid;
                         border-top-color   : transparent;
                         border-right-color : transparent;
-                        border-bottom-color: ${colors.green};
+                        border-bottom-color: ${colors.yellow};
                         border-left-color  : transparent;
                         top                : -20px;
                         left               : 0;
@@ -237,7 +237,7 @@ export const Styles = styled.div`
                         position           : absolute;
                         border-width       : 10px 18px;
                         border-style       : solid;
-                        border-top-color   : ${colors.green};
+                        border-top-color   : ${colors.yellow};
                         border-right-color : transparent;
                         border-bottom-color: transparent;
                         border-left-color  : transparent;
@@ -276,7 +276,7 @@ export const Styles = styled.div`
                 a {
                     font-size     : 13px;
                     color         : #ffffff;
-                    background    : ${colors.gr_bg};
+                    background    : ${colors.yl_bg};
                     display       : inline-block;
                     width         : 110px;
                     height        : 40px;
@@ -296,7 +296,7 @@ export const Styles = styled.div`
                         width    : 40px;
                         height   : 100%;
                         border-radius : 5px 0 0 5px;
-                        background-color: ${colors.green2};
+                        background-color: ${colors.yellow2};
                     }
 
                     &:hover {
@@ -322,7 +322,7 @@ export const Styles = styled.div`
                 top       : 20px;
                 left      : 0;
                 padding   : 0 30px;
-                background: ${colors.gr_bg};
+                background: ${colors.yl_bg};
                 border-radius : 5px;
 
                 ul.nav.menu-nav {
@@ -382,7 +382,7 @@ export const Styles = styled.div`
                                     border-bottom : 1px solid ${colors.border1};
 
                                     &:hover {
-                                        color: ${colors.green};
+                                        color: ${colors.yellow};
 
                                         i {
                                             color: #fff;
@@ -445,7 +445,7 @@ export const Styles = styled.div`
                             top      : 25px;
                             right    : -12px;
                             font-size: 26px;
-                            color    : ${colors.green};
+                            color    : ${colors.yellow};
                             cursor   : pointer;
                         }
                     }

@@ -27,7 +27,7 @@ export const Styles = styled.div`
                             margin-right: 20px;
                             i {
                                 font-size : 20px;
-                                color : ${colors.green};
+                                color : ${colors.yellow};
                                 vertical-align: top;
                             }
                             &:last-child {
@@ -58,7 +58,7 @@ export const Styles = styled.div`
                         &:before {
                             position: absolute;
                             content: "";
-                            background: ${colors.green};
+                            background: ${colors.yellow};
                             width: 50px;
                             height: 2px;
                             bottom: 0;
@@ -88,7 +88,7 @@ export const Styles = styled.div`
                                 margin-left: -20px;
                                 font-size : 30px;
                                 color : #ffffff;
-                                background : ${colors.gr_bg};
+                                background : ${colors.yl_bg};
                                 width: 42px;
                                 height: 42px;
                                 text-align: center;
@@ -106,7 +106,7 @@ export const Styles = styled.div`
                             margin-bottom: 15px;
                             i {
                                 float: left;
-                                color: ${colors.green};
+                                color: ${colors.yellow};
                                 border: 1px solid ${colors.border3};
                                 width: 35px;
                                 height: 35px;
@@ -134,7 +134,7 @@ export const Styles = styled.div`
                         &:before {
                             position: absolute;
                             content: "";
-                            background: ${colors.green};
+                            background: ${colors.yellow};
                             width: 50px;
                             height: 2px;
                             bottom: 0;
@@ -183,7 +183,7 @@ export const Styles = styled.div`
                                             transition : all 0.2s ease;
 
                                             &:hover {
-                                                background-color: ${colors.green} !important;
+                                                background-color: ${colors.yellow} !important;
                                             }
                                         }
 
@@ -226,7 +226,7 @@ export const Styles = styled.div`
                                 color : ${colors.black2};
                                 font-weight : 500;
                                 &:hover {
-                                    color : ${colors.green};
+                                    color : ${colors.yellow};
                                     text-decoration : underline;
                                 }
 
@@ -275,7 +275,7 @@ export const Styles = styled.div`
                         margin-bottom: 25px;
                         p {
                             display: inline-block;
-                            background: ${colors.gr_bg};
+                            background: ${colors.yl_bg};
                             margin-right: 5px;
                             width: 68px;
                             height: 65px;
@@ -335,7 +335,7 @@ export const Styles = styled.div`
                     button.buy-btn {
                         font-size: 16px;
                         color: #fff;
-                        background: ${colors.gr_bg};
+                        background: ${colors.yl_bg};
                         display: inline-block;
                         width: 100%;
                         height: 40px;

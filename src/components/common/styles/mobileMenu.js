@@ -14,7 +14,7 @@ export const Styles = styled.div`
                 padding: 8px 0;
                 i {
                     font-size: 16px;
-                    color: ${colors.green};
+                    color: ${colors.yellow};
                     vertical-align: text-top;
                     margin-right: 5px;
                 }
@@ -24,7 +24,7 @@ export const Styles = styled.div`
                 li {
                     a {
                         font-size : 13px;
-                        color : ${colors.green};
+                        color : ${colors.yellow};
                         font-weight : 500;
                         text-transform : uppercase;
                         &:hover {
@@ -58,7 +58,7 @@ export const Styles = styled.div`
                 a#mb-sidebar-btn {
                     i {
                         font-size : 20px;
-                        color : ${colors.green};
+                        color : ${colors.yellow};
                     }
                 }
 
@@ -99,7 +99,7 @@ export const Styles = styled.div`
                         color : ${colors.text3};
                     }
                     &:focus {
-                        border-color : ${colors.green};
+                        border-color : ${colors.yellow};
                     }
 
                     @media(max-width: 480px) {
@@ -119,7 +119,7 @@ export const Styles = styled.div`
                     background: transparent;
                     border: none;
                     font-size: 16px;
-                    color: ${colors.green};
+                    color: ${colors.yellow};
                     i {
 
                     }
@@ -153,7 +153,7 @@ export const Styles = styled.div`
     transition: all 400ms cubic-bezier(0.785,0.135,0.15,0.86);
     display: none;
     .mb-sidebar-heading {
-        background: ${colors.gr_bg};
+        background: ${colors.yl_bg};
         padding: 25px;
         h5 {
             color: #ffffff;
@@ -193,9 +193,9 @@ export const Styles = styled.div`
                         padding: 3px;
                     }
                     &:hover {
-                        color      : ${colors.green};
+                        color      : ${colors.yellow};
                         i {
-                            border-color : ${colors.green};
+                            border-color : ${colors.yellow};
                         }
                     }
                 }
@@ -216,7 +216,7 @@ export const Styles = styled.div`
                             padding    : 10px 0;
                             padding-left: 15px;
                             &:hover {
-                                color      : ${colors.green};
+                                color      : ${colors.yellow};
                             }
                         }
                     }

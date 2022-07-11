@@ -3,7 +3,7 @@ import { colors } from "../element/elements.js";
 
 export const Styles = styled.div`
     button.totop-btn {
-        background : ${colors.gr_bg};
+        background : ${colors.yl_bg};
         position: fixed;
         bottom : 1px;
         right : 30px;

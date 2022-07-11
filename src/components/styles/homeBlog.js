@@ -66,7 +66,7 @@ export const Styles = styled.div`
                             p {
                                 font-size  : 16px;
                                 color      : #fff;
-                                background : ${colors.gr_bg};
+                                background : ${colors.yl_bg};
                                 padding    : 8px 10px;
                                 line-height: 20px;
                                 border-radius : 5px;
@@ -85,7 +85,7 @@ export const Styles = styled.div`
                                     padding-top: 5px;
 
                                     &:hover {
-                                        color: ${colors.green};
+                                        color: ${colors.yellow};
                                     }
                                 }
                             }
@@ -111,12 +111,12 @@ export const Styles = styled.div`
 
                                     i {
                                         font-size     : 16px;
-                                        color         : ${colors.green};
+                                        color         : ${colors.yellow};
                                         vertical-align: text-bottom;
                                     }
 
                                     &:hover {
-                                        color: ${colors.green};
+                                        color: ${colors.yellow};
                                     }
                                 }
                             }

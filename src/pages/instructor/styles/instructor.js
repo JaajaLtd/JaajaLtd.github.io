@@ -32,7 +32,7 @@ export const Styles = styled.div`
                             color        : ${colors.black2};
                             font-weight  : 600;
                             &:hover {
-                                color : ${colors.green};
+                                color : ${colors.yellow};
                             }
                         }
                     }
@@ -57,7 +57,7 @@ export const Styles = styled.div`
                                     transition : all 0.2s ease;
 
                                     &:hover {
-                                        background-color: ${colors.green} !important;
+                                        background-color: ${colors.yellow} !important;
                                     }
                                 }
 
@@ -102,7 +102,7 @@ export const Styles = styled.div`
                         margin-bottom: 5px;
                         i {
                             font-size: 26px;
-                            color: ${colors.green};
+                            color: ${colors.yellow};
                             vertical-align: text-bottom;
                             margin-right: 5px;
 
@@ -161,14 +161,14 @@ export const Styles = styled.div`
                             }
 
                             &:hover {
-                                background-color: ${colors.green} !important;
+                                background-color: ${colors.yellow} !important;
 
                                 &:before {
-                                    border-bottom-color: ${colors.green} !important;
+                                    border-bottom-color: ${colors.yellow} !important;
                                 }
 
                                 &:after {
-                                    border-top-color: ${colors.green} !important;
+                                    border-top-color: ${colors.yellow} !important;
                                 }
                             }
                         }
@@ -266,7 +266,7 @@ export const Styles = styled.div`
                 }
                 span {
                     font-size : 16px;
-                    color : ${colors.green};
+                    color : ${colors.yellow};
                     font-weight: 500;
                     display : inline-block;
                     margin-bottom: 15px;
@@ -296,7 +296,7 @@ export const Styles = styled.div`
                     &:before {
                         position: absolute;
                         content: "";
-                        background: ${colors.green};
+                        background: ${colors.yellow};
                         width: 50px;
                         height: 2px;
                         bottom: 0;
@@ -348,7 +348,7 @@ export const Styles = styled.div`
                     &:before {
                         position: absolute;
                         content: "";
-                        background: ${colors.green};
+                        background: ${colors.yellow};
                         width: 50px;
                         height: 2px;
                         bottom: 0;
@@ -433,7 +433,7 @@ export const Styles = styled.div`
                                 margin-bottom: 12px;
 
                                 &:hover {
-                                    color: ${colors.green};
+                                    color: ${colors.yellow};
                                 }
                             }
                         }
@@ -457,7 +457,7 @@ export const Styles = styled.div`
 
                                     i {
                                         font-size     : 16px;
-                                        color         : ${colors.green};
+                                        color         : ${colors.yellow};
                                         vertical-align: text-bottom;
                                         margin-right  : 3px;
                                     }
@@ -503,7 +503,7 @@ export const Styles = styled.div`
                     }
 
                     .swiper-pagination-bullet.swiper-pagination-bullet-active {
-                        background: ${colors.green};
+                        background: ${colors.yellow};
                     }
                 }
             }

@@ -37,7 +37,7 @@ export const Styles = styled.div`
                                     font-weight: 600;
 
                                     &:hover {
-                                        color: ${colors.green};
+                                        color: ${colors.yellow};
                                     }
                                 }
                             }
@@ -51,7 +51,7 @@ export const Styles = styled.div`
                                     color: ${colors.text3};
                                     i {
                                         font-size : 18px;
-                                        color: ${colors.green};
+                                        color: ${colors.yellow};
                                         vertical-align: top;
                                     }
                                     &:first-child {
@@ -92,7 +92,7 @@ export const Styles = styled.div`
                             }
                             p {
                                 font-size : 20px;
-                                color: ${colors.green};
+                                color: ${colors.yellow};
                                 font-weight: 500;
                                 text-transform : uppercase;
 
@@ -120,8 +120,8 @@ export const Styles = styled.div`
                                 border-radius: 5px;
                                 &:hover {
                                     color: #ffffff;
-                                    background: ${colors.gr_bg};
-                                    border-color : ${colors.green};
+                                    background: ${colors.yl_bg};
+                                    border-color : ${colors.yellow};
                                 }
 
                                 @media(max-width: 767px) {
