@@ -59,7 +59,7 @@ const AuthUserLoader = () => {
         {(gettingAuthUser) && (
           <div className="text-center text-sm my-1 text-uppercase text-primary font500">
             <LoadingOutlined />
-            <div className="font600 d-inline ms-2">Loading Your Profile...</div>
+            <div className="font600 d-inline ms-2">System is Loading...</div>
           </div>
         )}
 

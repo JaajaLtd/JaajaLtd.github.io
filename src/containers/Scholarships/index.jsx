@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
 import { FaIdCard, FaList, FaReplyAll, FaUserGraduate, FaUserPlus } from 'react-icons/fa';
+import AdvertForm from './AdvertForm';
 import ChangeOfProgramme from './ChangeOfProgramme';
 import ScholarshipList from './ScholarshipList';
 
@@ -10,8 +11,8 @@ const Scholarships = () => {
     {
       id: 1,
       icon: <FaIdCard className="display-4 mb-2" />,
-      title: 'APPLY FOR ID',
-      action: 'apply-for-id',
+      title: 'View Applicants',
+      action: 'view-applicants',
     },
     {
       id: 2,
@@ -22,8 +23,8 @@ const Scholarships = () => {
     {
       id: 3,
       icon: <FaList className="display-4 mb-2" />,
-      title: 'Enter New Scholarship Record',
-      action: 'change-of-programme',
+      title: 'Create Scholarship Advert',
+      action: 'scholarship-advert-form',
     },
   ];
 
@@ -32,8 +33,8 @@ const Scholarships = () => {
       {(currentTab === 'list-all-scholarships' && (
         <ScholarshipList setCurrentTab={setCurrentTab} />
       )) ||
-        (currentTab === 'change-of-programme' && (
-          <ChangeOfProgramme setCurrentTab={setCurrentTab} />
+        (currentTab === 'scholarship-advert-form' && (
+          <AdvertForm setCurrentTab={setCurrentTab} />
         )) || (
           <Row className="row-deck justify-content-center w-100 overflow-hidden">
             {serviceList.map((service) => (

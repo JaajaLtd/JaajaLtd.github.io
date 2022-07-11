@@ -90,6 +90,7 @@ const MainHeader = () => {
                         {authUser.lastname}
                       </span>
                       <Avatar
+                        src={process.env.PUBLIC_URL + "/assets/img/userDefault.png"}
                         width={24}
                         height={24}
                         className="my-auto d-inline rounded-circle"

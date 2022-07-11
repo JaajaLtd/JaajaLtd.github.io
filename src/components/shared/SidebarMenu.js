@@ -19,6 +19,7 @@ import {
   FaUserEdit,
   FaUserGraduate,
   FaUser,
+  FaRegPlusSquare,
 } from 'react-icons/fa';
 import MenuList from '../../config/routes/MenuList';
 
@@ -31,6 +32,10 @@ const sideBarMenu = [
       {
         ...MenuList.Scholarships,
         icon: <FaRegEdit />,
+      },
+      {
+        ...MenuList.Advert,
+        icon: <FaRegPlusSquare />,
       },
     ],
   },

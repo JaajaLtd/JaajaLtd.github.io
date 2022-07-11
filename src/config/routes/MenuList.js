@@ -2,6 +2,7 @@
 import Scholarships from '../../containers/Scholarships';
 import NewUser from '../../containers/NewUser';
 import UserList from '../../containers/NewUser/UserList';
+import AdvertForm from '../../containers/Scholarships/AdvertForm';
 /*import AcademicCalendar from '../../containers/AcademicCalender';
 import EnrollmentHistory from '../../containers/EnrollmentHistory';
 import CurrentEvents from '../../containers/Events/CurrentEvents';
@@ -25,6 +26,12 @@ const MenuList = {
     action: 'scholarships-main',
     key: 'scholarships-main',
     Component: Scholarships
+  },
+  Advert: {
+    title: 'Advert Form',
+    action: 'advert-form',
+    key: 'advert-form',
+    Component: AdvertForm
   },
   UserRegister: {
     title: 'Create Account',
