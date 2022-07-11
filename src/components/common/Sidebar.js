@@ -40,7 +40,7 @@ function Sidebar() {
 
             <div className="sidebar" id="sidebar-body">
                 <div className="side-logo d-flex justify-content-between">
-                    <div><Link to={process.env.PUBLIC_URL + "/"}><img src={process.env.PUBLIC_URL + "/assets/images/logo.png"} alt="" /></Link></div>
+                    <div><Link to={process.env.PUBLIC_URL + "/"}><img height={50} width={80} src={process.env.PUBLIC_URL + "/assets/images/logo.png"} alt="" /></Link></div>
                     <div><a href={process.env.PUBLIC_URL + "/"} id="close-sidebar"><i className="las la-times"></i></a></div>
                 </div>
                 <div className="side-content">
