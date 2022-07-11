@@ -8,18 +8,18 @@ const app = {
     metadata: [],
     gettingMetadata: false,
   },
-
-  institutionStructure: {
-    gettingInstitutionStructure: false,
-    institutionStructure: {},
-    institutionStructureError: {},
-  },
-
-  currentSemester: {
-    currentSemester: {},
-    currentSemesterError: {},
-    gettingCurrentSemester: false,
-  },
+  /*
+    institutionStructure: {
+      gettingInstitutionStructure: false,
+      institutionStructure: {},
+      institutionStructureError: {},
+    },
+  
+    currentSemester: {
+      currentSemester: {},
+      currentSemesterError: {},
+      gettingCurrentSemester: false,
+    },*/
 };
 
 export default app;

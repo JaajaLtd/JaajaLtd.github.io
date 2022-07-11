@@ -11,16 +11,7 @@ import ResetPassword from '../../containers/Auth/ResetPassword';
 import DataSpinner from '../common/DataSpinner';
 
 const AuthLayout = () => {
-  const dispatch = useDispatch();
-  const { institutionStructure, gettingInstitutionStructure } = useSelector(
-    (state) => state.app
-  );
   const [currentPage, setCurrentPage] = useState('login');
-
-  useEffect(() => {
-    if (isEmpty(institutionStructure))
-      dispatch(appActions.getInstitutionStructure());
-  }, []);
 
   return (
     <div className="text-primary overflow-auto">
@@ -28,25 +19,19 @@ const AuthLayout = () => {
         <Row className="min-vh-100 justify-content-center py-4 g-0">
           <Col md={4} lg={3} sm={6} className="my-auto mx-center">
             <div className="mx-auto text-center">
-              {gettingInstitutionStructure ? (
-                <DataSpinner text="" />
-              ) : (
-                <Image
-                  src={`${process.env.REACT_APP_INSTITUTION_LOGO_PATH}/${institutionStructure?.institution_logo}`}
-                  alt="University Logo"
-                  style={{ maxWidth: '200px' }}
-                  className="text-center"
-                  fallback={Logo}
-                  preview={false}
-                  draggable={false}
-                />
-              )}
+              <Image
+                src={`${process.env.REACT_APP_INSTITUTION_LOGO_PATH}/logo.png`}
+                alt="System Logo"
+                style={{ maxWidth: '200px' }}
+                className="text-center"
+                fallback={Logo}
+                preview={false}
+                draggable={false}
+              />
             </div>
-            {!gettingInstitutionStructure && (
-              <div className="align-centre mt-1 font600 text-uppercase text-md mb-4 mt-3">
-                STUDENT PORTAL
-              </div>
-            )}
+            <div className="align-centre mt-1 font600 text-uppercase text-md mb-4 mt-3">
+              ADMIN PORTAL
+            </div>
             {(currentPage === RoutePaths.login.path && (
               <Login setCurrentPage={setCurrentPage} />
             )) ||

@@ -17,17 +17,11 @@ const AuthUserLoader = () => {
   const dispatch = useDispatch();
   const { authUser, authUserError, isAuthenticated, gettingAuthUser } =
     useSelector((state) => state.auth);
-  const { institutionStructure, gettingInstitutionStructure } = useSelector(
-    (state) => state.app
-  );
   const [errorMessage, setErrorMessage] = useState(null);
   const prevState = usePrevious({ authUserError });
   const accessToken = getAccessToken();
 
   useEffect(() => {
-    if (isEmpty(institutionStructure)) {
-      dispatch(appActions.getInstitutionStructure());
-    }
     if (
       isEmpty(authUser) &&
       !isEmpty(accessToken) &&
@@ -62,7 +56,7 @@ const AuthUserLoader = () => {
       <Container className="align-middle my-auto mx-auto">
         <UserOutlined className="display-2 text-primary" />
 
-        {(gettingAuthUser || gettingInstitutionStructure) && (
+        {(gettingAuthUser) && (
           <div className="text-center text-sm my-1 text-uppercase text-primary font500">
             <LoadingOutlined />
             <div className="font600 d-inline ms-2">Loading Your Profile...</div>

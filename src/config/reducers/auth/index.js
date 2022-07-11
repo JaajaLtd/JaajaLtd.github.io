@@ -4,21 +4,22 @@ import initialState from '../../initialState';
 
 function auth(state = initialState.auth, actions) {
   switch (actions.type) {
-    case authActions.LOGIN_STUDENT_REQUEST:
+    case authActions.LOGIN_USER_REQUEST:
       return {
         ...state,
         loginError: {},
         loginIn: true,
         authUserError: {},
       };
-    case authActions.LOGIN_STUDENT_SUCCESS:
+    case authActions.LOGIN_USER_SUCCESS:{
       return {
         ...state,
         loginData: actions.data,
         loginError: {},
         loginIn: false,
       };
-    case authActions.LOGIN_STUDENT_ERROR:
+    }
+    case authActions.LOGIN_USER_ERROR:
       return {
         ...state,
         loginError: actions.error,
@@ -55,6 +56,7 @@ function auth(state = initialState.auth, actions) {
       };
     case authActions.GET_AUTH_USER_SUCCESS: {
       const authUser = actions.data;
+      console.log(actions.data);
       let currentStudentProgramme = {};
       if (!isEmpty(authUser.academic_records)) {
         const findCurrentProgramme = authUser.academic_records.find(
@@ -175,14 +177,6 @@ function auth(state = initialState.auth, actions) {
         gettingAccountBalance: false,
         accountBalance: actions.data,
       };
-
-    case authActions.GET_AUTH_USER_ACCOUNT_BALANCE_ERROR:
-      return {
-        ...state,
-        gettingAccountBalance: false,
-        accountBalanceError: actions.error,
-      };
-
     case authActions.SET_AUTH_USER:
       return {
         ...state,

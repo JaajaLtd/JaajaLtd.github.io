@@ -21,6 +21,11 @@ const registration = {
     getCourseUnitError: {},
     courseUnitsByStudyYear: [],
   },
+  users: {
+    loading: false,
+    users: [],
+    loadError: {},
+  },
 };
 
 export default registration;

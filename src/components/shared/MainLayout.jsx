@@ -20,20 +20,20 @@ const MainLayout = () => {
   const { authUser, currentStudentProgramme } = useSelector(
     (state) => state.auth
   );
-  const { institutionStructure } = useSelector((state) => state.app);
+ // const { institutionStructure } = useSelector((state) => state.app);
   const isMobileDevice = useMediaQuery({ maxWidth: 767 });
 
   useEffect(() => {
     if (isEmpty(authUser)) {
       dispatch(authActions.getAuthUser());
     }
-    if (isEmpty(institutionStructure))
-      dispatch(appActions.getInstitutionStructure());
+   /* if (isEmpty(institutionStructure))
+      dispatch(appActions.getInstitutionStructure());*/
   }, []);
 
   useEffect(() => {
     if (isEmpty(selectedMenu)) {
-      dispatch(settingActions.setSelectedMenu(MenuList.SelfEnrollment));
+      dispatch(settingActions.setSelectedMenu(MenuList.Scholarships));
     }
   }, [selectedMenu]);
 
@@ -65,7 +65,7 @@ const MainLayout = () => {
         <title>{selectedMenu?.title}</title>
       </Helmet>
 
-      <Layout style={{ minHeight: '100vh' }} key={currentStudentProgramme.id}>
+      <Layout style={{ minHeight: '100vh' }} key={`currentStudentProgramme.id`}>{/* change key here */}
         {isMobileDevice ? (
           <Drawer
             title={<SideTitle />}

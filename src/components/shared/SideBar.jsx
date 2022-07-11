@@ -44,16 +44,13 @@ const SideBar = () => {
             <div className="font500 mt-2 text-uppercase text-light">
               {`${authUser.firstname} ${authUser.lastname}`}
             </div>
-            <div className="font600 text-uppercase mt-1 text-light">
-              {`STUDENT NO.: ${authUser.student_number}`}
-            </div>
           </>
         )}
       </div>
       <Menu
         mode="inline"
-        defaultSelectedKeys={[MenuList.SelfEnrollment.action]}
-        defaultOpenKeys={['registration-and-enrollment']}
+        defaultSelectedKeys={[MenuList.Scholarships.action]}
+        defaultOpenKeys={['scholarships']}
         theme="light"
       >
         {sideBarMenu.map((menuItem) => (

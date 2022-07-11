@@ -1,23 +1,24 @@
 import app from './app';
 import setting from './setting';
-import enrollment from './enrollment';
-import auth from './auth';
-import paymentReference from './paymentReference';
-import registration from './registration';
-import payment from './payment';
-import result from './result';
 import scholarship from './scholarship';
+import auth from './auth';
+import user from './user';
+/*
+import enrollment from './enrollment';
+import paymentReference from './paymentReference';
+import payment from './payment';
+import result from './result';*/
 
 const initialStates = {
   ...app,
   ...setting,
-  ...enrollment,
   ...auth,
-  ...paymentReference,
-  ...registration,
-  ...payment,
-  ...result,
-  ...scholarship
+  ...scholarship,
+  ...user,
+  //...enrollment,
+  //...paymentReference,
+  //...payment,
+  //...result,
 };
 
 export default initialStates;

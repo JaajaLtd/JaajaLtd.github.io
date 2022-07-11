@@ -3,26 +3,25 @@ import axios from 'axios';
 import { authActions } from '../../actions';
 import { clearToken } from '../../services/storageService';
 
-function* loginStudent(actions) {
+function* loginUser(actions) {
   try {
+    console.log(actions.data);
     const response = yield axios({
-      url: '/student-portal/auth/login',
+      url: '/authenticate-user',
       method: 'POST',
       data: actions.data,
     });
     yield put({
-      type: authActions.LOGIN_STUDENT_SUCCESS,
+      type: authActions.LOGIN_USER_SUCCESS,
       data: response,
     });
     yield put({
       type: authActions.GET_AUTH_USER_REQUEST,
     });
-    yield put({
-      type: authActions.GET_AUTH_USER_ACCOUNT_BALANCE_REQUEST,
-    });
   } catch (error) {
+    console.log(error)
     yield put({
-      type: authActions.LOGIN_STUDENT_ERROR,
+      type: authActions.LOGIN_USER_ERROR,
       error: error.data,
     });
   }
@@ -80,23 +79,7 @@ function* fetchAuthUser() {
   }
 }
 
-function* getAuthUserBalance() {
-  try {
-    const response = yield axios({
-      url: '/student-portal/auth/account-balance',
-      method: 'GET',
-    });
-    yield put({
-      type: authActions.GET_AUTH_USER_ACCOUNT_BALANCE_SUCCESS,
-      data: response.accountBalance,
-    });
-  } catch (error) {
-    yield put({
-      type: authActions.GET_AUTH_USER_ACCOUNT_BALANCE_ERROR,
-      error: error.data,
-    });
-  }
-}
+
 
 function* getStudentProgrammes() {
   try {
@@ -173,8 +156,8 @@ function* resetPassword(action) {
   }
 }
 
-function* watchLoginStudent() {
-  yield takeLatest(authActions.LOGIN_STUDENT_REQUEST, loginStudent);
+function* watchloginUser() {
+  yield takeLatest(authActions.LOGIN_USER_REQUEST, loginUser);
 }
 
 function* watchLogout() {
@@ -192,12 +175,6 @@ function* watchGetStudentProgrammes() {
   );
 }
 
-function* watchGetStudentBalance() {
-  yield takeLatest(
-    authActions.GET_AUTH_USER_ACCOUNT_BALANCE_REQUEST,
-    getAuthUserBalance
-  );
-}
 
 function* watchChangePassword() {
   yield takeLatest(authActions.CHANGE_PASSWORD_REQUEST, changePassword);
@@ -212,13 +189,12 @@ function* watchResetPassword() {
 }
 
 const forkFunctions = [
-  fork(watchLoginStudent),
+  fork(watchloginUser),
   fork(watchLogout),
   fork(watchFetchAuthUser),
-  fork(watchGetStudentProgrammes),
-  fork(watchGetStudentBalance),
+  //fork(watchGetStudentProgrammes),
   fork(watchChangePassword),
-  fork(watchRequestToken),
+  //fork(watchRequestToken),
   fork(watchResetPassword),
 ];
 

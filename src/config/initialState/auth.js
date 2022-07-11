@@ -22,14 +22,15 @@ const authInitialState = {
     gettingAuthUser: false,
     fetchUserError: {},
     requesting: false,
-    currentStudentProgramme: {},
+
+    /*currentStudentProgramme: {},
     studentProgrammes: [],
     gettingStudentProgrammes: false,
     studentProgrammeError: {},
 
     gettingAccountBalance: false,
     accountBalance: 0,
-    accountBalanceError: {},
+    accountBalanceError: {},*/
   },
 };
 

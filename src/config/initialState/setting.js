@@ -1,7 +1,7 @@
 const setting = {
   setting: {
     selectedMenu: {},
-    sideMenuTab: 'bio-data',
+   // sideMenuTab: 'bio-data',
     showModal: false,
     showEditModal: false,
     showDeleteModal: false,

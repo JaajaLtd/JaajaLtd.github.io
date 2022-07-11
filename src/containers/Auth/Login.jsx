@@ -66,7 +66,7 @@ const Login = ({ setCurrentPage }) => {
   const onSubmit = (data) => {
     setError(null);
     if (!isEmpty(data)) {
-      dispatch(authActions.loginStudent(removeEmptyOrNullObject(data)));
+      dispatch(authActions.loginUser(removeEmptyOrNullObject(data)));
     }
   };
 

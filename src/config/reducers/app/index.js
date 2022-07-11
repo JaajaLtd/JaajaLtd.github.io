@@ -21,26 +21,6 @@ function metadata(state = initialState.metadata, actions) {
         currentSemesterError: actions.error,
         gettingCurrentSemester: false,
       };
-
-    case appActions.GET_INSTITUTION_STRUCTURE_REQUEST:
-      return {
-        ...state,
-        institutionStructureError: {},
-        gettingInstitutionStructure: true,
-      };
-    case appActions.GET_INSTITUTION_STRUCTURE_SUCCESS:
-      return {
-        ...state,
-        institutionStructure: actions.data,
-        gettingInstitutionStructure: false,
-      };
-    case appActions.GET_INSTITUTION_STRUCTURE_ERROR:
-      return {
-        ...state,
-        institutionStructureError: actions.error,
-        gettingInstitutionStructure: false,
-      };
-
     case appActions.GET_META_DATA_REQUEST:
       return {
         ...state,

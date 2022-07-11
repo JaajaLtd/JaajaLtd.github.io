@@ -53,24 +53,12 @@ const ProgrammeTab = () => {
   return (
     <>
       <Card.Header className="py-2 px-3 border-0 bg-light">
-        {programmeOptions.length > 1 ? (
-          <>
-            <SelectInput
-              type="select"
-              selectOptions={programmeOptions}
-              onChange={handleChangeProgramme}
-              value={selectedProgramme}
-              name="current_programme"
-              label="PROGRAMME:"
-              inline
-            />
-          </>
-        ) : (
+        
           <div className="text-sm font500 my-auto">
-            <span className="text-primary me-1">PROGRAMME:</span>
-            {`(${currentStudentProgramme.programme_code}) - ${currentStudentProgramme.programme_title}`}
+            <span className="text-primary me-1">SCHOLARSHIP SYSTEM:</span>
+            HESMIS
           </div>
-        )}
+        
       </Card.Header>
     </>
   );

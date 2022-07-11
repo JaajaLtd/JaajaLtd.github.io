@@ -1,21 +1,35 @@
 import app from './app';
 import auth from './auth';
 import setting from './setting';
-import result from './result'
-import registration from './registration'
-import payment from './payment'
-import enrollment from './enrollment'
-import paymentReference from './payment/paymentReference'
 import server from './app/server'
 import scholarship from './scholarship';
-
+import user from './user';
+/*import result from './result'
+import payment from './payment'
+import registration from './registration'
+import enrollment from './enrollment'
+import paymentReference from './payment/paymentReference'
+*/
 const authActions = {
   ...auth
 }
 const settingActions = {
   ...setting
 }
-const resultActions = {
+const appActions = {
+  ...app
+};
+const serverActions = {
+  ...server
+}
+//Scholarship stuff
+const scholarshipActions = {
+  ...scholarship
+}
+const userActions = {
+  ...user
+}
+/*const resultActions = {
   ...result
 }
 const registrationActions = {
@@ -27,21 +41,12 @@ const paymentActions = {
 const enrollmentActions = {
   ...enrollment
 }
-const appActions = {
-  ...app
-};
 const paymentReferenceActions = {
   ...paymentReference
 }
-const serverActions = {
-  ...server
-}
+*/
 
-//Scholarship stuff
-const scholarshipActions = {
-  ...scholarship
-}
-
-export { appActions, paymentActions, resultActions, settingActions, serverActions, paymentReferenceActions,  registrationActions, enrollmentActions, authActions, scholarshipActions };
+//export { appActions, paymentActions, resultActions, settingActions, serverActions, paymentReferenceActions,  registrationActions, enrollmentActions, authActions, scholarshipActions };
+export { appActions, settingActions, serverActions, authActions,scholarshipActions,userActions};
 
 export default appActions;

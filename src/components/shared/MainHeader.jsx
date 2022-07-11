@@ -32,13 +32,13 @@ const MainHeader = () => {
 
   const actionButtons = [
     {
-      title: 'ACADEMIC CALENDAR',
-      action: MenuList.AcademicCalendar,
+      title: 'VIEW OPEN SCHALORSHIPS',
+      action: MenuList.Scholarships,
       id: 1,
     },
     {
-      title: 'GET PAYMENT REF',
-      action: MenuList.PaymentReference,
+      title: 'VIEW OPENSCHOLARSHIPS',
+      action: MenuList.Scholarships,
       id: 2,
     },
   ];
@@ -75,7 +75,7 @@ const MainHeader = () => {
 
         <div className="rightContainer d-inline">
           <Menu
-            key={MenuList.ProfileData.action}
+            key={MenuList.Scholarships.action}
             mode="horizontal"
           >
             <SubMenu
@@ -106,7 +106,7 @@ const MainHeader = () => {
               <Menu.Item
                 key="my-profile"
                 icon={<UserOutlined />}
-                onClick={() => setSelectedMenu(MenuList.ProfileData)}
+                onClick={() => setSelectedMenu(MenuList.Scholarships)}
               >
                 My Profile
               </Menu.Item>

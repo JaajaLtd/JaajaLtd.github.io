@@ -9,6 +9,7 @@ import { settingActions } from '../../config/actions';
 const CustomModal = ({ title, children, size, ...props }) => {
   const dispatch = useDispatch();
   const showModal = useSelector((state) => state.setting.showModal);
+  console.log(showModal);
 
   const handleClose = () => {
     dispatch(settingActions.setShowModal(false));

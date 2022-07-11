@@ -19,13 +19,13 @@ const LoginForm = ({ onSubmit }) => {
       <Card.Body className="pt-2">
         <Form onSubmit={handleSubmit(onSubmit)}>
           <InputText
-            name="username"
-            label="Username"
+            name="email"
+            label="Email"
             requiredField
             register={register({
-              required: 'Username field is required',
+              required: 'Email field is required',
             })}
-            error={get(errors, 'username.message')}
+            error={get(errors, 'email.message')}
           />
 
           <InputText

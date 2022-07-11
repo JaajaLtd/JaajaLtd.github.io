@@ -77,6 +77,24 @@ function registration(state = initialState.registration, actions) {
         getCourseUnitError: actions.error,
         gettingCourseUnits: false,
       };
+    case registrationActions.GET_REGISTERED_USERS_REQUEST:
+      return {
+        ...state,
+        loadError: {},
+        loading: true,
+      };
+    case registrationActions.GET_REGISTERED_USERS_SUCCESS:
+      return {
+        ...state,
+        users: [actions.data, ...state.users],
+        loading: false,
+      };
+    case registrationActions.GET_REGISTERED_USERS_ERROR:
+      return {
+        ...state,
+        loadError: actions.error,
+        loading: false,
+      };
     default:
       return state;
   }

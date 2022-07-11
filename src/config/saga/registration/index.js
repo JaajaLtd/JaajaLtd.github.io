@@ -1,6 +1,6 @@
 import { takeLatest, fork, put } from 'redux-saga/effects';
 import axios from 'axios';
-import { enrollmentActions, registrationActions } from '../../actions';
+import { registrationActions } from '../../actions';
 
 function* getRegistrationEvent(actions) {
   try {
@@ -50,9 +50,9 @@ function* registerStudent(actions) {
       type: registrationActions.REGISTER_STUDENT_SUCCESS,
       data: response.data,
     });
-    yield put({
+    /*yield put({
       type: enrollmentActions.GET_CURRENT_EVENTS_REQUEST,
-    });
+    });*/
   } catch (error) {
     yield put({
       type: registrationActions.REGISTER_STUDENT_ERROR,
@@ -80,6 +80,24 @@ function* getCourseUnits(actions) {
   }
 }
 
+function* getRegisteredUsers(actions) {
+  try {
+    const response = yield axios({
+      url: `/authenticate-user`,
+      method: 'GET',
+      params: actions.data,
+    });
+    yield put({
+      type: registrationActions.GET_REGISTERED_USERS_SUCCESS ,
+      data: response.data,
+    });
+  } catch (error) {
+    yield put({
+      type: registrationActions.GET_REGISTERED_USERS_ERROR,
+      error: error.data,
+    });
+  }
+}
 function* watchGetRegistrationEvent() {
   yield takeLatest(
     registrationActions.GET_REGISTRATION_EVENT_REQUEST,
@@ -101,18 +119,18 @@ function* watchRegisterStudent() {
   );
 }
 
-function* watchGetCourseUnits() {
+function* watchGetRegisteredUsers() {
   yield takeLatest(
-    registrationActions.GET_COURSE_UNITS_REQUEST,
-    getCourseUnits
+    registrationActions.GET_REGISTERED_USERS_REQUEST,
+    getRegisteredUsers
   );
 }
 
 const forkFunctions = [
-  fork(watchGetRegistrationEvent),
-  fork(watchGetRegistrationHistory),
-  fork(watchRegisterStudent),
-  fork(watchGetCourseUnits),
+  //fork(watchGetRegistrationEvent),
+  //fork(watchGetRegistrationHistory),
+  //fork(watchRegisterStudent),
+  fork(watchGetRegisteredUsers),
 ];
 
 export default forkFunctions;

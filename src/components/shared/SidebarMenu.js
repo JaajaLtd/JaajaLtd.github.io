@@ -35,6 +35,21 @@ const sideBarMenu = [
     ],
   },
   {
+    title: 'Users',
+    key: 'registered-users',
+    icon: <ReconciliationOutlined />,
+    routes: [
+      {
+        ...MenuList.UserList,
+        icon: <FaUser />,
+      },
+      {
+        ...MenuList.UserRegister,
+        icon: <UserOutlined />,
+      },
+    ],
+  },
+ /* {
     title: 'Institutions',
     key: 'institution',
     icon: <ReconciliationOutlined />,
@@ -130,7 +145,7 @@ const sideBarMenu = [
   {
     ...MenuList.AcademicCalendar,
     icon: <CalendarOutlined />,
-  },
+  },*/
 ];
 
 export default sideBarMenu;

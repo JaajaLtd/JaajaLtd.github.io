@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
-import { FaIdCard, FaReplyAll, FaUserGraduate } from 'react-icons/fa';
+import { FaIdCard, FaList, FaReplyAll, FaUserGraduate, FaUserPlus } from 'react-icons/fa';
 import ChangeOfProgramme from './ChangeOfProgramme';
-import Refund from './Refund';
 import ScholarshipList from './ScholarshipList';
 
 const Scholarships = () => {
@@ -16,14 +15,14 @@ const Scholarships = () => {
     },
     {
       id: 2,
-      icon: <FaReplyAll className="display-4 mb-2" />,
+      icon: <FaUserGraduate className="display-4 mb-2" />,
       title: 'View All Scholarships',
       action: 'list-all-scholarships',
     },
     {
       id: 3,
-      icon: <FaUserGraduate className="display-4 mb-2" />,
-      title: 'APPLY FOR CHANGE OF PROGRAMME',
+      icon: <FaList className="display-4 mb-2" />,
+      title: 'Enter New Scholarship Record',
       action: 'change-of-programme',
     },
   ];

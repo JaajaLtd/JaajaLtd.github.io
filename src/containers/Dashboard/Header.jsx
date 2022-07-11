@@ -4,49 +4,49 @@ import { ButtonGroup, Card, Button } from 'react-bootstrap';
 import { FaUserCheck, FaUserTimes } from 'react-icons/fa';
 import { useDispatch, useSelector } from 'react-redux';
 import { AlertMessage, DataSpinner } from '../../components/common';
-import { appActions, enrollmentActions } from '../../config/actions';
+import { appActions } from '../../config/actions';
 import ProgrammeTab from './ProgrammeTab';
 
 const Header = () => {
   const dispatch = useDispatch();
-  const { gettingCurrentSemester, currentEvents } = useSelector(
+  const [isRegistered, setIsRegistered] = useState(true);//remove this later
+  /*const { gettingCurrentSemester, currentEvents } = useSelector(
     (state) => state.enrollment
   );
   const { currentStudentProgramme, accountBalance } = useSelector(
     (state) => state.auth
   );
   const { currentSemester } = useSelector((state) => state.app);
-  const [isRegistered, setIsRegistered] = useState(false);
 
   const reloadCurrentSemester = () => {
     dispatch(appActions.getCurrentSemester());
     if (!isEmpty(currentStudentProgramme))
       dispatch(enrollmentActions.getCurrentEvents(currentStudentProgramme?.id));
   };
-
+*/
   useEffect(() => {
-    if (isEmpty(currentSemester)) {
+   /* if (isEmpty(currentSemester)) {
       reloadCurrentSemester();
-    }
+    }*/
   }, []);
-
+/*
   useEffect(() => {
     if (!isEmpty(currentEvents)) {
       setIsRegistered(!isEmpty(currentEvents.studentRegistration));
     }
-  }, [currentEvents]);
+  }, [currentEvents]);*/
 
   const buttonOptions = [
     {
       id: 1,
       title: 'Current Yr',
-      value: currentSemester?.academicYear?.academicYear?.metadata_value,
+      value: '2017/2018',//changed
       color: 'info',
     },
     {
       id: 2,
       title: 'Current Sem',
-      value: currentSemester?.semester?.metadata_value,
+      value: 'Semester One',//cnhaged
       color: 'info',
     },
     {

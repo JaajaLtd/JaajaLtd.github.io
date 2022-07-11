@@ -15,13 +15,10 @@ function App() {
   const dispatch = useDispatch();
   const { addToast, removeAllToasts } = useToasts();
   const { serverSuccess, serverError } = useSelector((state) => state.server);
-  const { metadata, institutionStructure } = useSelector((state) => state.app);
+  const { metadata } = useSelector((state) => state.app);
   const prevState = usePrevious({ serverSuccess, serverError });
 
   useEffect(() => {
-    if (isEmpty(institutionStructure)) {
-      dispatch(appActions.getInstitutionStructure());
-    }
     if (isEmpty(metadata)) {
       dispatch(appActions.getMetadata());
     }
