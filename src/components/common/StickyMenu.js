@@ -24,7 +24,7 @@ function StickyMenu() {
                     <Row>
                         <Col md="3">
                             <div className="logo">
-                                <Link to={process.env.PUBLIC_URL + "/"}><img src={process.env.PUBLIC_URL + "/assets/images/logo.png"} alt="" /></Link>
+                                <Link to={process.env.PUBLIC_URL + "/"}><img height={50} width={80} src={process.env.PUBLIC_URL + "/assets/images/logo.png"} alt="" /></Link>
                             </div>
                         </Col>
                         <Col md="9">
