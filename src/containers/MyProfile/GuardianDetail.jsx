@@ -9,23 +9,17 @@ const GuardianDetail = ({ authUser }) => {
   const { control } = useForm();
   return (
     <>
-      <Card.Header className="text-primary font600 py-3 text-sm">
-        <FaUserGraduate className="me-1" />
-        GUARDIAN DETAILS
-      </Card.Header>
       <Card.Body>
         <Row>
           <Col md={6}>
             <InputText
               label="Full Name"
               defaultValue={authUser.guardian_name}
-              disabled
               inline
             />
             <InputText
               label="Email"
               defaultValue={authUser.guardian_email}
-              disabled
               inline
             />
             <InputText
@@ -34,7 +28,6 @@ const GuardianDetail = ({ authUser }) => {
               control={control}
               name="guardian_phone"
               defaultValue={authUser.guardian_phone}
-              disabled
               inline
             />
           </Col>
@@ -42,13 +35,11 @@ const GuardianDetail = ({ authUser }) => {
             <InputText
               label="Relationship"
               defaultValue={authUser.guardian_relationship}
-              disabled
               inline
             />
             <InputText
               label="Address"
               defaultValue={authUser.guardian_address}
-              disabled
               inline
             />
           </Col>

@@ -9,7 +9,8 @@ import { useSelector } from 'react-redux';
 import { get } from 'lodash';
 import { removeEmptyOrNullObject } from '../../helpers/dataFormatter';
 import React, { useEffect, useState } from 'react';
-
+import { UploadOutlined } from '@ant-design/icons';
+import { Button, Upload } from 'antd';
 const AdvertForm = () => {
     const { register, handleSubmit, errors } = useForm();
     const loginIn = useSelector((state) => state.auth.loginIn);
@@ -21,6 +22,18 @@ const AdvertForm = () => {
             //dispatch(authActions.loginUser(removeEmptyOrNullObject(data)));
         }
     };
+    const handleOnChange =(data)=>{
+        console.log(data)
+    }
+    const fileList = [
+        {
+            uid: '-1',
+            name: 'xxx.png',
+            status: 'done',
+            url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+            thumbUrl: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+        }
+    ];
     return (
 
         <Row className="row-deck justify-content-center w-100 overflow-hidden">
@@ -31,11 +44,12 @@ const AdvertForm = () => {
                         NEW SCHOLARSHIP ADVERT
                     </Card.Header>
                     <Card.Body className="bg-white">
-                        <Row>
+                       
                             {!isEmpty(error) && (
                                 <AlertMessage message={error} className="p-1 px-3 text-sm rounded-sm" />
                             )}
                             <Form onSubmit={handleSubmit(onSubmit)}>
+                            <Row>
                                 <Col md={12}>
                                     <InputText
                                         label="Country Name"
@@ -123,18 +137,35 @@ const AdvertForm = () => {
                                         })}
                                         error={get(errors, 'student_current_year.message')}
                                     />
+                                    </Col>
+                                    </Row>
+                                    <Row>
+                                        <Col md={4}>
+                                            Upload Cover Photo
+                                        </Col>
+                                    <Col md={8} >
+                                    <Upload
+                                        action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
+                                        listType="picture"
+                                        maxCount={1}
+                                        defaultFileList={[...fileList]}
+                                        onChange={handleOnChange}
+                                    >
+                                        <Button icon={<UploadOutlined />}>Upload</Button>
+                                    </Upload>
                                 </Col>
+                                </Row>
+                                <Row className="row-deck justify-content-center w-100 overflow-hidden">
                                 <Col md={3}>
                                     <SubmitButton
                                         className="text-uppercase text-white text-sm mt-3 w-100 mb-2 font600"
-                                        text="Create"
-                                        loading={loginIn}
+                                        text="Create Ad"
                                         iconBefore={<FaSignInAlt className="me-1" />}
-                                        loadingText="Signing in..."
                                     />
                                 </Col>
+
+                                </Row>
                             </Form>
-                        </Row>
                     </Card.Body>
                 </Card>
             </Col>

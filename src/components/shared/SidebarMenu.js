@@ -54,6 +54,14 @@ const sideBarMenu = [
       },
     ],
   },
+  {
+    ...MenuList.ProfileData,
+    icon: <UserOutlined />,
+  },
+  {
+    ...MenuList.UserRegister,
+    icon: <UserOutlined />,
+  },
  /* {
     title: 'Institutions',
     key: 'institution',
@@ -138,14 +146,6 @@ const sideBarMenu = [
         icon: <FaRegCopy />,
       },
     ],
-  },
-  {
-    ...MenuList.ProfileData,
-    icon: <UserOutlined />,
-  },
-  {
-    ...MenuList.UserRegister,
-    icon: <UserOutlined />,
   },
   {
     ...MenuList.AcademicCalendar,

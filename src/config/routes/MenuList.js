@@ -3,11 +3,11 @@ import Scholarships from '../../containers/Scholarships';
 import NewUser from '../../containers/NewUser';
 import UserList from '../../containers/NewUser/UserList';
 import AdvertForm from '../../containers/Scholarships/AdvertForm';
+import MyProfile from '../../containers/MyProfile';
 /*import AcademicCalendar from '../../containers/AcademicCalender';
 import EnrollmentHistory from '../../containers/EnrollmentHistory';
 import CurrentEvents from '../../containers/Events/CurrentEvents';
 import Institutions from '../../containers/Institutions';
-import MyProfile from '../../containers/MyProfile';
 import PaymentReferences from '../../containers/PaymentReferences';
 import MyInvoices from '../../containers/Payments/MyInvoices';
 //import CreateInvoice from '../../containers/Invoice';
@@ -45,12 +45,13 @@ const MenuList = {
     key: 'registered-users-list',
     Component: UserList,
   },
- /* ProfileData: {
+  ProfileData: {
     title: 'Profile Data',
     action: 'bio-data',
     key: 'bio-data',
     Component: MyProfile,
   },
+ /* 
   PaymentReference: {
     title: 'Get Payment REF',
     action: 'payment-references',
