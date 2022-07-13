@@ -34,7 +34,7 @@ const MainHeader = () => {
   const actionButtons = [
     {
       title: 'VIEW OPEN SCHALORSHIPS',
-      action: MenuList.Scholarships,
+      action: MenuList.Scholarships.action,
       id: 1,
     }
   ];

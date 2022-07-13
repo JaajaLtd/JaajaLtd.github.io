@@ -4,6 +4,7 @@ import NewUser from '../../containers/NewUser';
 import UserList from '../../containers/NewUser/UserList';
 import AdvertForm from '../../containers/Scholarships/AdvertForm';
 import MyProfile from '../../containers/MyProfile';
+import DashboardMain from '../../containers/Dashboard/Dashboard';
 /*import AcademicCalendar from '../../containers/AcademicCalender';
 import EnrollmentHistory from '../../containers/EnrollmentHistory';
 import CurrentEvents from '../../containers/Events/CurrentEvents';
@@ -50,6 +51,12 @@ const MenuList = {
     action: 'bio-data',
     key: 'bio-data',
     Component: MyProfile,
+  },
+  Dashboard: {
+    title: 'Dashboard',
+    action: 'dashboard-main',
+    key: 'dashboard-main',
+    Component: DashboardMain,
   },
  /* 
   PaymentReference: {

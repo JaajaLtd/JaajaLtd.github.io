@@ -123,7 +123,7 @@ const MainLayout = () => {
             <div className="p-3">{renderSwitchStatement()}</div>
           </Content>
           <Footer className="bg-white text-sm text-muted font600 py-3 border-top text-center">
-            &copy; School System
+            &copy; HESMIS - MOES
           </Footer>
         </Layout>
       </Layout>

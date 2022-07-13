@@ -20,10 +20,15 @@ import {
   FaUserGraduate,
   FaUser,
   FaRegPlusSquare,
+  FaHome,
 } from 'react-icons/fa';
 import MenuList from '../../config/routes/MenuList';
 
 const sideBarMenu = [
+  {
+    ...MenuList.Dashboard,
+    icon: <FaHome />,
+  },
   {
     title: 'Scholarships',
     key: 'scholarships',
