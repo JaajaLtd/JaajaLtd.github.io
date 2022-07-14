@@ -15,7 +15,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { authActions} from '../../config/actions';
 import Avatar from './Avatar';
 import ProfileData from './ProfileData';
-import ChangePassword from './ChangePassword';
 import AcademicDetail from './AcademicDetail';
 import GuardianDetail from './GuardianDetail';
 import NextOfKin from './NextOfKin';
@@ -53,12 +52,6 @@ const MyProfile = () => {
       icon: <FaUserGraduate className="me-2" />,
     },
     {
-      id: 2,
-      title: 'Academic Details',
-      key: 'academic-details',
-      icon: <FaGraduationCap className="me-2" />,
-    },
-    {
       id: 3,
       title: 'Guardian Details',
       key: 'guardian-details',
@@ -69,20 +62,14 @@ const MyProfile = () => {
       title: 'Next of Kin',
       key: 'next-of-kin',
       icon: <FaUserFriends className="me-2" />,
-    },
-    {
-      id: 5,
-      title: 'Change Password',
-      key: 'change-password',
-      icon: <FaUserSecret className="me-2" />,
-    },
+    }
   ];
 
   return (
     <>
       <Card>
         <Card.Header className="py-3 text-primary font600 text-sm mb-0">
-          ACADEMIC PROFILE
+          STUDENT PROFILE
         </Card.Header>
         <Row className="row-deck gx-0 gy-2">
           <Col md={12}>
@@ -112,10 +99,6 @@ const MyProfile = () => {
               {currentTab === 'guardian-details' && (
                 <GuardianDetail authUser={authUser} />
               )}
-              {currentTab === 'academic-details' && (
-                <AcademicDetail authUser={authUser} />
-              )}
-              {currentTab === 'change-password' && <ChangePassword />}
             </Card>
           </Col>
         </Row>

@@ -11,7 +11,7 @@ const ProfileData = ({ authUser }) => {
     <>
       <Card.Body>
         <Row>
-          <Col md={6}>
+          <Col md={4}>
             <InputText
               label="First Name"
               defaultValue={authUser.firstname}
@@ -28,6 +28,23 @@ const ProfileData = ({ authUser }) => {
               inline
             />
             <InputText
+              label="Gender"
+              defaultValue={authUser.gender}
+              inline
+            />
+            <InputText
+              label="Date Of Birth"
+              defaultValue={authUser.date_of_birth}
+              inline
+            />
+            <InputText
+              label="Home District"
+              defaultValue={authUser.date_of_birth}
+              inline
+            />
+          </Col>
+          <Col md={4}>
+            <InputText
               label="Email"
               defaultValue={authUser.email}
               inline
@@ -40,20 +57,18 @@ const ProfileData = ({ authUser }) => {
               defaultValue={authUser.phone}
               inline
             />
-          </Col>
-          <Col md={6}>
-            <InputText
-              label="Gender"
-              defaultValue={authUser.gender}
-              inline
-            />
-            <InputText
-              label="Date Of Birth"
-              defaultValue={authUser.date_of_birth}
-              inline
-            />
             <InputText
               label="Nationality"
+              defaultValue={authUser.nationality}
+              inline
+            />
+            <InputText
+              label="NIN"
+              defaultValue={authUser.nationality}
+              inline
+            />
+            <InputText
+              label="Passport No."
               defaultValue={authUser.nationality}
               inline
             />
@@ -63,6 +78,26 @@ const ProfileData = ({ authUser }) => {
               defaultValue= 'THIS IS MY ADDRESS FIELD PLEASE DONT MISUSE IT. AM TRYING TO SEE IF THE DATA IS ENOUGHT LENGTH.'//{authUser.national_id_number}
               rows={3}
               col={3}
+              inline
+            />
+          </Col>
+          <Col md={4}>
+            <InputText
+              label="Email"
+              defaultValue={authUser.email}
+              inline
+            />
+            <InputText
+              label="Telephone Number"
+              type="tel"
+              control={control}
+              name="phone"
+              defaultValue={authUser.phone}
+              inline
+            />
+            <InputText
+              label="Nationality"
+              defaultValue={authUser.nationality}
               inline
             />
           </Col>

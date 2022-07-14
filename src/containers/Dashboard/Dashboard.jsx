@@ -45,7 +45,7 @@ const DashboardMain = () => {
         (currentTab === 'ongoing-scholarships' && (
           <AdvertForm setCurrentTab={setCurrentTab} />
         )) || (
-          <Row className="row-deck justify-content-center w-100 overflow-hidden">
+          <Row className="row-deck justify-content-center w-100 overflow-hidden row-cols-md-4">
             {serviceList.map((service) => (
               <Col md={3} key={service.id}>
                 <Card

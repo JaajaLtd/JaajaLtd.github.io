@@ -149,9 +149,9 @@ const MainHeader = () => {
               <Menu.Item
                 key="Settings"
                 icon={<FaCog />}
-                //onClick={}
+                onClick={() => setSelectedMenu(MenuList.ChangePassword)}
                 className="font600"
-              > Settings
+              > Change Password
               </Menu.Item>
               <hr className='px-0 mx-0' />
               <Menu.Item

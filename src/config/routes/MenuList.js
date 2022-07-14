@@ -5,6 +5,8 @@ import UserList from '../../containers/NewUser/UserList';
 import AdvertForm from '../../containers/Scholarships/AdvertForm';
 import MyProfile from '../../containers/MyProfile';
 import DashboardMain from '../../containers/Dashboard/Dashboard';
+import AcademicProfile from '../../containers/MyProfile/AcademicProfile';
+import ChangePassword from '../../containers/Auth/ChangePassword';
 /*import AcademicCalendar from '../../containers/AcademicCalender';
 import EnrollmentHistory from '../../containers/EnrollmentHistory';
 import CurrentEvents from '../../containers/Events/CurrentEvents';
@@ -47,16 +49,28 @@ const MenuList = {
     Component: UserList,
   },
   ProfileData: {
-    title: 'Profile Data',
+    title: 'Personal Details',
     action: 'bio-data',
     key: 'bio-data',
     Component: MyProfile,
+  },
+  AcademicProfile: {
+    title: 'Academic Details',
+    action: 'academic-details',
+    key: 'academic-details',
+    Component: AcademicProfile,
   },
   Dashboard: {
     title: 'Dashboard',
     action: 'dashboard-main',
     key: 'dashboard-main',
     Component: DashboardMain,
+  },
+  ChangePassword: {
+    title: 'Password Change',
+    action: 'change-password',
+    key: 'change-password',
+    Component: ChangePassword,
   },
  /* 
   PaymentReference: {

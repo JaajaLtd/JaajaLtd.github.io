@@ -22,7 +22,7 @@ const AdvertForm = () => {
             //dispatch(authActions.loginUser(removeEmptyOrNullObject(data)));
         }
     };
-    const handleOnChange =(data)=>{
+    const handleOnChange = (data) => {
         console.log(data)
     }
     const fileList = [
@@ -35,7 +35,6 @@ const AdvertForm = () => {
         }
     ];
     return (
-
         <Row className="row-deck justify-content-center w-100 overflow-hidden">
             <Col md={8}>
                 <Card>
@@ -44,11 +43,11 @@ const AdvertForm = () => {
                         NEW SCHOLARSHIP ADVERT
                     </Card.Header>
                     <Card.Body className="bg-white">
-                       
-                            {!isEmpty(error) && (
-                                <AlertMessage message={error} className="p-1 px-3 text-sm rounded-sm" />
-                            )}
-                            <Form onSubmit={handleSubmit(onSubmit)}>
+
+                        {!isEmpty(error) && (
+                            <AlertMessage message={error} className="p-1 px-3 text-sm rounded-sm" />
+                        )}
+                        <Form onSubmit={handleSubmit(onSubmit)}>
                             <Row>
                                 <Col md={12}>
                                     <InputText
@@ -137,13 +136,13 @@ const AdvertForm = () => {
                                         })}
                                         error={get(errors, 'student_current_year.message')}
                                     />
-                                    </Col>
-                                    </Row>
-                                    <Row>
-                                        <Col md={4}>
-                                            Upload Cover Photo
-                                        </Col>
-                                    <Col md={8} >
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col md={4}>
+                                    Upload Cover Photo
+                                </Col>
+                                <Col md={8} >
                                     <Upload
                                         action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
                                         listType="picture"
@@ -154,8 +153,8 @@ const AdvertForm = () => {
                                         <Button icon={<UploadOutlined />}>Upload</Button>
                                     </Upload>
                                 </Col>
-                                </Row>
-                                <Row className="row-deck justify-content-center w-100 overflow-hidden">
+                            </Row>
+                            <Row className="row-deck justify-content-center w-100 overflow-hidden">
                                 <Col md={3}>
                                     <SubmitButton
                                         className="text-uppercase text-white text-sm mt-3 w-100 mb-2 font600"
@@ -164,8 +163,8 @@ const AdvertForm = () => {
                                     />
                                 </Col>
 
-                                </Row>
-                            </Form>
+                            </Row>
+                        </Form>
                     </Card.Body>
                 </Card>
             </Col>
