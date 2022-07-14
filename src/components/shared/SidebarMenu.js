@@ -22,6 +22,7 @@ import {
   FaRegPlusSquare,
   FaHome,
   FaBookOpen,
+  FaFilePdf,
 } from 'react-icons/fa';
 import MenuList from '../../config/routes/MenuList';
 
@@ -72,6 +73,10 @@ const sideBarMenu = [
       {
         ...MenuList.AcademicProfile,
         icon: <FaBookOpen />,
+      },
+      {
+        ...MenuList.DocumentUpload,
+        icon: <FaFilePdf />,
       },
     ],
   },

@@ -7,6 +7,7 @@ import MyProfile from '../../containers/MyProfile';
 import DashboardMain from '../../containers/Dashboard/Dashboard';
 import AcademicProfile from '../../containers/MyProfile/AcademicProfile';
 import ChangePassword from '../../containers/Auth/ChangePassword';
+import PersonalDocument from '../../containers/MyProfile/PersonalDocuments';
 /*import AcademicCalendar from '../../containers/AcademicCalender';
 import EnrollmentHistory from '../../containers/EnrollmentHistory';
 import CurrentEvents from '../../containers/Events/CurrentEvents';
@@ -59,6 +60,12 @@ const MenuList = {
     action: 'academic-details',
     key: 'academic-details',
     Component: AcademicProfile,
+  },
+  DocumentUpload: {
+    title: 'Documents',
+    action: 'academic-and-personal-documents',
+    key: 'academic-and-personal-documents',
+    Component: PersonalDocument,
   },
   Dashboard: {
     title: 'Dashboard',

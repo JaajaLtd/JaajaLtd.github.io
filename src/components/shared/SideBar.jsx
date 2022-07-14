@@ -49,8 +49,8 @@ const SideBar = () => {
       </div>
       <Menu
         mode="inline"
-        defaultSelectedKeys={[MenuList.Scholarships.action]}
-        defaultOpenKeys={['scholarships']}
+        defaultSelectedKeys={[MenuList.Dashboard.action]}
+        //defaultOpenKeys={['scholarships']}
         theme="light"
       >
         {sideBarMenu.map((menuItem) => (
