@@ -33,7 +33,7 @@ const MainLayout = () => {
 
   useEffect(() => {
     if (isEmpty(selectedMenu)) {
-      dispatch(settingActions.setSelectedMenu(MenuList.Scholarships));
+      dispatch(settingActions.setSelectedMenu(MenuList.Dashboard));
     }
   }, [selectedMenu]);
 

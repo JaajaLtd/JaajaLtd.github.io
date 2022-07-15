@@ -13,32 +13,32 @@ const AcademicDetail = ({ authUser }) => {
           <>
             {authUser.academic_records.map((academicRecord) => (
               <div key={academicRecord.id}>
-                <Card.Header className="py-2 bg-light border text-xs m-0 mb-2 text-sm font500">
-                  {`${academicRecord.programme_code} - ${academicRecord.programme_title}`}
-                  {academicRecord.is_current_programme === true && (
-                    <span className="bg-success ms-1 text-xs py-1 px-2 text-white text-uppercase">
-                      Current Programme
-                    </span>
-                  )}
-                </Card.Header>
                 <Row>
                   <Col md={6}>
                     <InputText
-                      label="Campus"
-                      defaultValue={academicRecord.campus}
-                      name="campus"
+                      label="Institution / University Name"
+                      defaultValue=""
+                      name="institution_name"
                       inline
                     />
                     <InputText
-                      label="Programme Version"
-                      defaultValue={academicRecord.version_title}
-                      name="version_title"
+                      type="textarea"
+                      label="Institution Location"
+                      defaultValue=""
+                      name="institution_location"
                       inline
                     />
                     <InputText
-                      label="Intake"
-                      defaultValue={academicRecord.intake}
-                      name="intake"
+                      label="Course Name"
+                      defaultValue=""
+                      name="course_name"
+                      inline
+                    />
+                    <InputText
+                      label="Course Level"
+                      defaultValue=""
+                      placeholder="e.g., Masters, PhD, etc"
+                      name="course_level"
                       inline
                     />
                     <InputText
@@ -60,72 +60,42 @@ const AcademicDetail = ({ authUser }) => {
                       inline
                     />
                     <InputText
-                      label="Programme Type"
-                      defaultValue={academicRecord.programme_type}
-                      name="programme_type"
+                      label="Course Duration"
+                      defaultValue=""
+                      placeholder="e.g., 2 Years"
                       inline
                     />
                     <InputText
-                      label="Sponsorship"
-                      defaultValue={academicRecord.sponsorship}
+                      label="Date of Completion"
+                      name="completion_date"
+                      defaultValue=""
+                      placeholder="e.g., June 2024"
                       inline
                     />
+                  </Col>
+                  <Col md={6}>
                     <InputText
                       label="Academic Status"
                       name="student_academic_status"
                       defaultValue={academicRecord.student_academic_status}
                       inline
                     />
-                  </Col>
-                  <Col md={6}>
                     <InputText
-                      label="Billing Category"
-                      defaultValue={academicRecord.billing_category}
+                      label="Sponsor"
+                      defaultValue=""
+                      placeholder="e.g., MIT"
                       inline
                     />
                     <InputText
-                      label="Marital Status"
-                      defaultValue={academicRecord.marital_status}
-                      inline
-                    />
-                    <InputText
+                      type="textarea"
                       label="Residence Status"
-                      defaultValue={academicRecord.residence_status}
-                      inline
-                    />
-                    <InputText
-                      label="Hall of Attachment"
-                      defaultValue={academicRecord.hall_of_attachment}
-                      inline
-                    />
-                    <InputText
-                      label="Hall of Residence"
-                      defaultValue={academicRecord.hall_of_residence || 'N/A'}
-                      inline
-                    />
-                    <InputText
-                      label="Fees Waiver"
-                      defaultValue={academicRecord.fees_waiver || 'N/A'}
+                      defaultValue=""
                       inline
                     />
                     <InputText
                       label="Has Completed?"
                       defaultValue={
                         academicRecord.has_completed === true ? 'YES' : 'NO'
-                      }
-                      inline
-                    />
-                    <InputText
-                      label="On Loan Scheme?"
-                      defaultValue={
-                        academicRecord.is_on_loan_scheme === true ? 'YES' : 'NO'
-                      }
-                      inline
-                    />
-                    <InputText
-                      label="Affiliated?"
-                      defaultValue={
-                        academicRecord.is_affiliated === true ? 'YES' : 'NO'
                       }
                       inline
                     />

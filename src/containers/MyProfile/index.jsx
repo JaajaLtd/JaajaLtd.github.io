@@ -3,6 +3,7 @@ import moment from 'moment';
 import React, { useEffect, useState } from 'react';
 import { Button, Card, Col, ListGroup, Row } from 'react-bootstrap';
 import {
+  FaFileUpload,
   FaGraduationCap,
   FaUserCheck,
   FaUserFriends,
@@ -19,6 +20,7 @@ import AcademicDetail from './AcademicDetail';
 import GuardianDetail from './GuardianDetail';
 import NextOfKin from './NextOfKin';
 import { DataSpinner } from '../../components/common';
+import PersonalDocument from './PersonalDocuments';
 
 const MyProfile = () => {
   const dispatch = useDispatch();
@@ -94,7 +96,8 @@ const MyProfile = () => {
             <Card className="border-start border-top-0 border-bottom-0 border-end-0">
               {currentTab === 'bio-data' && <ProfileData authUser={authUser} />}
               {currentTab === 'next-of-kin' && (
-                <NextOfKin authUser={authUser} />
+               // <NextOfKin authUser={authUser} />
+                <GuardianDetail authUser={authUser} />
               )}
               {currentTab === 'guardian-details' && (
                 <GuardianDetail authUser={authUser} />

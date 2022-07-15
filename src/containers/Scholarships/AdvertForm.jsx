@@ -25,19 +25,11 @@ const AdvertForm = () => {
     const handleOnChange = (data) => {
         console.log(data)
     }
-    const fileList = [
-        {
-            uid: '-1',
-            name: 'xxx.png',
-            status: 'done',
-            url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
-            thumbUrl: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
-        }
-    ];
+    const fileList = [];
     return (
         <Row className="row-deck justify-content-center w-100 overflow-hidden">
-            <Col md={8}>
-                <Card>
+            <Col md={12}>
+                <Card className="rounded-sm">
                     <Card.Header className="text-primary font600 py-3 text-sm">
                         <FaUser className="p-2" />
                         NEW SCHOLARSHIP ADVERT
@@ -49,7 +41,40 @@ const AdvertForm = () => {
                         )}
                         <Form onSubmit={handleSubmit(onSubmit)}>
                             <Row>
-                                <Col md={12}>
+                                <Col md={6}>
+                                    <InputText
+                                        type="textarea"
+                                        label="Scholarship Name"
+                                        name="scholarship_name"
+                                        inline
+                                        requiredField
+                                        register={register({
+                                            required: 'Scholarship Name is required',
+                                        })}
+                                        error={get(errors, 'scholarship_name.message')}
+                                    />
+                                    <InputText
+                                        type="textarea"
+                                        label="Excerpt Description"
+                                        name="excerpt_description"
+                                        inline
+                                        requiredField
+                                        register={register({
+                                            required: 'Description is required',
+                                        })}
+                                        error={get(errors, 'excerpt_description.message')}
+                                    />
+                                    <InputText
+                                        type="textarea"
+                                        label="Sponsor Organisation/Country"
+                                        name="sponsor"
+                                        inline
+                                        requiredField
+                                        register={register({
+                                            required: 'Sponsor is required',
+                                        })}
+                                        error={get(errors, 'sponsor.message')}
+                                    />
                                     <InputText
                                         label="Country Name"
                                         name="countryName"
@@ -62,14 +87,14 @@ const AdvertForm = () => {
                                     />
                                     <InputText
                                         type="number"
-                                        label="Number Of Scholarships"
+                                        label="Number Of Slots"
                                         name="number_of_scholarships"
                                         inline
                                         requiredField
                                         defaultValue={1}
                                         minvalue={1}
                                         register={register({
-                                            required: 'No. of Scholarship field is required',
+                                            required: 'No. of Scholarships field is required',
                                         })}
                                         error={get(errors, 'number_of_scholarships.message')}
                                     />
@@ -92,6 +117,19 @@ const AdvertForm = () => {
                                             required: 'Advert Link field is required',
                                         })}
                                         error={get(errors, 'advert.message')}
+                                    />
+                                </Col>
+                                <Col md={6}>
+                                    <InputText
+                                        type="date"
+                                        label="Application Deadline"
+                                        name="application_deadline"
+                                        inline
+                                        requiredField
+                                        register={register({
+                                            required: 'Application Deadline is required',
+                                        })}
+                                        error={get(errors, 'application_deadline.message')}
                                     />
                                     <InputText
                                         type="date"
@@ -136,22 +174,22 @@ const AdvertForm = () => {
                                         })}
                                         error={get(errors, 'student_current_year.message')}
                                     />
-                                </Col>
-                            </Row>
-                            <Row>
-                                <Col md={4}>
-                                    Upload Cover Photo
-                                </Col>
-                                <Col md={8} >
-                                    <Upload
-                                        action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
-                                        listType="picture"
-                                        maxCount={1}
-                                        defaultFileList={[...fileList]}
-                                        onChange={handleOnChange}
-                                    >
-                                        <Button icon={<UploadOutlined />}>Upload</Button>
-                                    </Upload>
+                                    <Row>
+                                        <Col md={4}>
+                                            Upload Cover Photo
+                                        </Col>
+                                        <Col md={8} >
+                                            <Upload
+                                                action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
+                                                listType="picture"
+                                                maxCount={1}
+                                                defaultFileList={[...fileList]}
+                                                onChange={handleOnChange}
+                                            >
+                                                <Button icon={<UploadOutlined />}>Upload</Button>
+                                            </Upload>
+                                        </Col>
+                                    </Row>
                                 </Col>
                             </Row>
                             <Row className="row-deck justify-content-center w-100 overflow-hidden">
@@ -162,7 +200,6 @@ const AdvertForm = () => {
                                         iconBefore={<FaSignInAlt className="me-1" />}
                                     />
                                 </Col>
-
                             </Row>
                         </Form>
                     </Card.Body>
