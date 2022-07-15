@@ -1,0 +1,10 @@
+{
+  "server": {
+    "status": true,
+    "message": "Login successful"
+  },
+  "access_token": {
+    "token_type": "Bearer",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjExNDU2NCIsInN0dWRlbnRfbnVtYmVyIjoiMTUwNzMxMDA4MTg3IiwicmVnaXN0cmF0aW9uX251bWJlciI6IjE1L1UvODE4Ny9JU0UvUEUiLCJpYXQiOjE2MzA5Mjk4NzksImV4cCI6MTYzMTAxNjI3OX0.Pk3H0DWwx2MehbgOU9YWlwByWMvOV-Ayr7jqp5J2bBY"
+  }
+}
