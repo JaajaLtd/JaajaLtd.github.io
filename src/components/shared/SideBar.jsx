@@ -28,7 +28,7 @@ const SideBar = () => {
           isMobileDevice ? 'py-2' : 'py-3'
         } border-bottom`}
       >
-        <Avatar shape="square" size={76} draggable={false} />
+        <Avatar src={process.env.PUBLIC_URL + "/assets/img/userDefault.png"} shape="square" size={76} draggable={false} />
 
         {gettingAuthUser && isEmpty(authUser) ? (
           <div className="d-block text-center">

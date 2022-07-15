@@ -9,35 +9,44 @@ const ProfileData = ({ authUser }) => {
   const { control } = useForm();
   return (
     <>
-      <Card.Header className="text-primary font600 py-3 text-sm">
-        <FaUser className="me-1" />
-        MY PROFILE DETAILS
-      </Card.Header>
       <Card.Body>
         <Row>
-          <Col md={6}>
+          <Col md={4}>
             <InputText
               label="First Name"
               defaultValue={authUser.firstname}
-              disabled
               inline
             />
             <InputText
               label="Last Name"
               defaultValue={authUser.lastname}
-              disabled
               inline
             />
             <InputText
               label="Other Name"
               defaultValue={authUser.other_name}
-              disabled
               inline
             />
             <InputText
+              label="Gender"
+              defaultValue={authUser.gender}
+              inline
+            />
+            <InputText
+              label="Date Of Birth"
+              defaultValue={authUser.date_of_birth}
+              inline
+            />
+            <InputText
+              label="Home District"
+              defaultValue={authUser.date_of_birth}
+              inline
+            />
+          </Col>
+          <Col md={4}>
+            <InputText
               label="Email"
               defaultValue={authUser.email}
-              disabled
               inline
             />
             <InputText
@@ -46,27 +55,21 @@ const ProfileData = ({ authUser }) => {
               control={control}
               name="phone"
               defaultValue={authUser.phone}
-              disabled
-              inline
-            />
-          </Col>
-          <Col md={6}>
-            <InputText
-              label="Gender"
-              defaultValue={authUser.gender}
-              disabled
-              inline
-            />
-            <InputText
-              label="Date Of Birth"
-              defaultValue={authUser.date_of_birth}
-              disabled
               inline
             />
             <InputText
               label="Nationality"
               defaultValue={authUser.nationality}
-              disabled
+              inline
+            />
+            <InputText
+              label="NIN"
+              defaultValue={authUser.nationality}
+              inline
+            />
+            <InputText
+              label="Passport No."
+              defaultValue={authUser.nationality}
               inline
             />
             <InputText
@@ -74,6 +77,27 @@ const ProfileData = ({ authUser }) => {
               type="textarea"
               defaultValue= 'THIS IS MY ADDRESS FIELD PLEASE DONT MISUSE IT. AM TRYING TO SEE IF THE DATA IS ENOUGHT LENGTH.'//{authUser.national_id_number}
               rows={3}
+              col={3}
+              inline
+            />
+          </Col>
+          <Col md={4}>
+            <InputText
+              label="Email"
+              defaultValue={authUser.email}
+              inline
+            />
+            <InputText
+              label="Telephone Number"
+              type="tel"
+              control={control}
+              name="phone"
+              defaultValue={authUser.phone}
+              inline
+            />
+            <InputText
+              label="Nationality"
+              defaultValue={authUser.nationality}
               inline
             />
           </Col>

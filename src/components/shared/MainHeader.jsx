@@ -8,7 +8,8 @@ import {
 import { Layout, Menu } from 'antd';
 import { isEmpty } from 'lodash';
 import React from 'react';
-import { Button, ButtonGroup } from 'react-bootstrap';
+import { Button, ButtonGroup, Card, Col, ListGroup, Row } from 'react-bootstrap';
+import { FaBell, FaCog, FaTh } from 'react-icons/fa';
 import { useDispatch, useSelector } from 'react-redux';
 import { useMediaQuery } from 'react-responsive';
 import { authActions, settingActions } from '../../config/actions';
@@ -33,14 +34,9 @@ const MainHeader = () => {
   const actionButtons = [
     {
       title: 'VIEW OPEN SCHALORSHIPS',
-      action: MenuList.Scholarships,
+      action: MenuList.Scholarships.action,
       id: 1,
-    },
-    {
-      title: 'VIEW OPENSCHOLARSHIPS',
-      action: MenuList.Scholarships,
-      id: 2,
-    },
+    }
   ];
 
   return (
@@ -79,37 +75,85 @@ const MainHeader = () => {
             mode="horizontal"
           >
             <SubMenu
-              title={
-                <>
-                  {loggingOut || (gettingAuthUser && isEmpty(authUser)) ? (
-                    <LoadingOutlined />
-                  ) : (
-                    <span className="my-auto">
-                      <span style={{ color: '#999', marginRight: 4 }}>Hi,</span>
-                      <span className="text-uppercase text-primary text-sm font600 me-2">
-                        {authUser.lastname}
-                      </span>
-                      <Avatar
-                        width={24}
-                        height={24}
-                        className="my-auto d-inline rounded-circle"
-                        preview={false}
-                      />
-                    </span>
-                  )}
-                </>
-              }
-              key="profile"
+              key="profile33"
               className="px-0"
-              icon={<UserOutlined />}
+              icon={<FaTh size="20px" />}
+            >
+              <Menu.Item
+                key="my-profile2"
+                icon={<FaTh />}
+                onClick={() => setSelectedMenu(MenuList.Scholarships)}
+              >
+                My Profile2
+              </Menu.Item>
+            </SubMenu>
+            <SubMenu
+              key="Notifications"
+              icon={<FaBell size="20px" />}
+              className="px-2"
+            >
+              <Card.Header>Notifications</Card.Header>
+              <Menu.Item
+                key="my-profile24"
+                icon={<Avatar
+                  src={process.env.PUBLIC_URL + "/assets/img/userDefault.png"}
+                  width={30}
+                  height={30}
+                  className="my-auto d-inline rounded-circle"
+                  preview={false}
+                />}
+                onClick={() => setSelectedMenu(MenuList.Scholarships.action)}
+              >
+                Scotish Government Scholarships
+              </Menu.Item>
+              <Menu.Item
+                key="my-profile25"
+                icon={<Avatar
+                  src={process.env.PUBLIC_URL + "/assets/img/userDefault.png"}
+                  width={30}
+                  height={30}
+                  className="my-auto d-inline rounded-circle"
+                  preview={false}
+                />}
+                onClick={() => setSelectedMenu(MenuList.Scholarships.action)}
+              >
+                Scotish Government Scholarships
+              </Menu.Item>
+            </SubMenu>
+
+            <SubMenu
+              key="profile"
+              className="mx-0 px-0"
+              icon={<Avatar
+                src={process.env.PUBLIC_URL + "/assets/img/userDefault.png"}
+                width={30}
+                height={30}
+                className="my-auto d-inline rounded-circle"
+                preview={false}
+              />}
             >
               <Menu.Item
                 key="my-profile"
                 icon={<UserOutlined />}
+                onClick={() => setSelectedMenu(MenuList.ProfileData.action)}
+              >
+                My Profile & Account
+              </Menu.Item>
+              <Menu.Item
+                key="feedback"
+                icon={<FaTh />}
                 onClick={() => setSelectedMenu(MenuList.Scholarships)}
               >
-                My Profile
+                Feedback
               </Menu.Item>
+              <Menu.Item
+                key="Settings"
+                icon={<FaCog />}
+                onClick={() => setSelectedMenu(MenuList.ChangePassword)}
+                className="font600"
+              > Change Password
+              </Menu.Item>
+              <hr className='px-0 mx-0' />
               <Menu.Item
                 key="SignOut"
                 icon={loggingOut ? <LoadingOutlined /> : <LogoutOutlined />}
@@ -120,15 +164,6 @@ const MainHeader = () => {
                 Log out
               </Menu.Item>
             </SubMenu>
-            <Menu.Item
-              key="SignOut2"
-              icon={loggingOut ? <LoadingOutlined /> : <LogoutOutlined />}
-              onClick={() => dispatch(authActions.logoutUser())}
-              className="font600 px-2"
-              danger
-            >
-              Log out
-            </Menu.Item>
           </Menu>
         </div>
       </Header>

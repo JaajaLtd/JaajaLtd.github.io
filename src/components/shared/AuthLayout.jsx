@@ -30,7 +30,7 @@ const AuthLayout = () => {
               />
             </div>
             <div className="align-centre mt-1 font600 text-uppercase text-md mb-4 mt-3">
-              ADMIN PORTAL
+              HESMIS PORTAL
             </div>
             {(currentPage === RoutePaths.login.path && (
               <Login setCurrentPage={setCurrentPage} />

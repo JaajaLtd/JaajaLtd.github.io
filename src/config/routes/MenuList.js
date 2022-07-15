@@ -2,11 +2,15 @@
 import Scholarships from '../../containers/Scholarships';
 import NewUser from '../../containers/NewUser';
 import UserList from '../../containers/NewUser/UserList';
+import AdvertForm from '../../containers/Scholarships/AdvertForm';
+import MyProfile from '../../containers/MyProfile';
+import DashboardMain from '../../containers/Dashboard/Dashboard';
+import AcademicProfile from '../../containers/MyProfile/AcademicProfile';
+import ChangePassword from '../../containers/Auth/ChangePassword';
 /*import AcademicCalendar from '../../containers/AcademicCalender';
 import EnrollmentHistory from '../../containers/EnrollmentHistory';
 import CurrentEvents from '../../containers/Events/CurrentEvents';
 import Institutions from '../../containers/Institutions';
-import MyProfile from '../../containers/MyProfile';
 import PaymentReferences from '../../containers/PaymentReferences';
 import MyInvoices from '../../containers/Payments/MyInvoices';
 //import CreateInvoice from '../../containers/Invoice';
@@ -26,6 +30,12 @@ const MenuList = {
     key: 'scholarships-main',
     Component: Scholarships
   },
+  Advert: {
+    title: 'Advert Form',
+    action: 'advert-form',
+    key: 'advert-form',
+    Component: AdvertForm
+  },
   UserRegister: {
     title: 'Create Account',
     action: 'create-account',
@@ -38,12 +48,31 @@ const MenuList = {
     key: 'registered-users-list',
     Component: UserList,
   },
- /* ProfileData: {
-    title: 'Profile Data',
+  ProfileData: {
+    title: 'Personal Details',
     action: 'bio-data',
     key: 'bio-data',
     Component: MyProfile,
   },
+  AcademicProfile: {
+    title: 'Academic Details',
+    action: 'academic-details',
+    key: 'academic-details',
+    Component: AcademicProfile,
+  },
+  Dashboard: {
+    title: 'Dashboard',
+    action: 'dashboard-main',
+    key: 'dashboard-main',
+    Component: DashboardMain,
+  },
+  ChangePassword: {
+    title: 'Password Change',
+    action: 'change-password',
+    key: 'change-password',
+    Component: ChangePassword,
+  },
+ /* 
   PaymentReference: {
     title: 'Get Payment REF',
     action: 'payment-references',
