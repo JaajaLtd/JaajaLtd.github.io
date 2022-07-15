@@ -100,88 +100,16 @@ function MobileMenu() {
                 </div>
                 <div className="mb-sidebar-menu">
                     <div className="mb-menu-item">
-                        <button className="mb-menu-button active">
-                            <p>Home <i className="las la-plus"></i></p>
-                        </button>
                         <div className="mb-menu-content show">
                             <ul className="list-unstyled">
-                                <li><Link to={process.env.PUBLIC_URL + "/"}>Home Style 1</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/home-two"}>Home Style 2</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="mb-menu-item">
-                        <button className="mb-menu-button active">
-                            <p>Pages <i className="las la-plus"></i></p>
-                        </button>
-                        <div className="mb-menu-content show">
-                            <ul className="list-unstyled">
-                                <li><Link to={process.env.PUBLIC_URL + "/about"}>About Us</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/gallery"}>Gallery</Link></li>
+                                <li className="nav-item active">
+                                    <Link className="nav-link" to={process.env.PUBLIC_URL + "/"}>Home</Link></li>
+                                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/course-grid"}>Scholarships</Link></li>
+                                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/about"}>About Us</Link></li>
+                                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/contact"}>Contact</Link></li>
+                                <li className="nav-item"><Link className="nav-link" to={process.env.PUBLIC_URL + "/faq"}>Faq</Link></li>
                                 <li><Link to={process.env.PUBLIC_URL + "/login"}>Log In</Link></li>
                                 <li><Link to={process.env.PUBLIC_URL + "/registration"}>Registration</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/contact"}>Contact</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/faq"}>Faq</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/404"}>404</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/coming-soon"}>Coming Soon</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="mb-menu-item">
-                        <button className="mb-menu-button active">
-                            <p>Courses <i className="las la-plus"></i></p>
-                        </button>
-                        <div className="mb-menu-content show">
-                            <ul className="list-unstyled">
-                                <li><Link to={process.env.PUBLIC_URL + "/course-grid"}>Course Grid</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/course-list"}>Course List</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/course-details"}>Course Details</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="mb-menu-item">
-                        <button className="mb-menu-button">
-                            <p>Instructor <i className="las la-plus"></i></p>
-                        </button>
-                        <div className="mb-menu-content">
-                            <ul className="list-unstyled">
-                                <li><Link to={process.env.PUBLIC_URL + "/instructor"}>Instructors</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/instructor-details"}>Instructor Details</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="mb-menu-item">
-                        <button className="mb-menu-button">
-                            <p>Event <i className="las la-plus"></i></p>
-                        </button>
-                        <div className="mb-menu-content">
-                            <ul className="list-unstyled">
-                                <li><Link to={process.env.PUBLIC_URL + "/events"}>Events</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/event-details"}>Event Details</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="mb-menu-item">
-                        <button className="mb-menu-button">
-                            <p>Blog <i className="las la-plus"></i></p>
-                        </button>
-                        <div className="mb-menu-content">
-                            <ul className="list-unstyled">
-                                <li><Link to={process.env.PUBLIC_URL + "/blog-classic"}>Blog Classic</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/blog-grid"}>Blog Grid</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/blog-details"}>Blog Details</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="mb-menu-item">
-                        <button className="mb-menu-button">
-                            <p>Shop <i className="las la-plus"></i></p>
-                        </button>
-                        <div className="mb-menu-content">
-                            <ul className="list-unstyled">
-                                <li><Link to={process.env.PUBLIC_URL + "/products"}>Products</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/product-details"}>Product Details</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/cart"}>Cart</Link></li>
                             </ul>
                         </div>
                     </div>

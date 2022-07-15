@@ -90,7 +90,7 @@ class InstructorDetails extends Component {
                                         <div className="experiance">
                                             <h5>Experiance</h5>
                                             <div className="qual-expe-box">
-                                                <h6>SnazzyTheme.com</h6>
+                                                <h6>Webmaster</h6>
                                                 <p>2016 - 2019</p>
                                             </div>
                                             <div className="qual-expe-box">
