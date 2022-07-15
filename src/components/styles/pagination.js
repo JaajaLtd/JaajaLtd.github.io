@@ -10,7 +10,7 @@ export const Styles = styled.div`
             margin-right : 15px;
             a {
                 font-size: 16px;
-                color: ${colors.green};
+                color: ${colors.yellow};
                 width: 38px;
                 height: 38px;
                 border: 1px solid ${colors.border3};
@@ -22,9 +22,9 @@ export const Styles = styled.div`
 
                 }
                 &:hover {
-                    background-color: ${colors.green};
+                    background-color: ${colors.yellow};
                     color: #ffffff;
-                    border-color : ${colors.green};
+                    border-color : ${colors.yellow};
                 }
 
                 @media(max-width: 575px) {
@@ -40,9 +40,9 @@ export const Styles = styled.div`
         }
         li.active {
             a {
-                background-color: ${colors.green};
+                background-color: ${colors.yellow};
                 color: #fff;
-                border-color : ${colors.green};
+                border-color : ${colors.yellow};
             }
         }
 

@@ -106,7 +106,7 @@ export const Styles = styled.div`
 
                     &:hover {
                         i {
-                            color: ${colors.green};
+                            color: ${colors.yellow};
                         }
                     }
 
@@ -211,7 +211,7 @@ export const Styles = styled.div`
             a.readmore-btn {
                 font-size : 14px;
                 color     : #fff;
-                background: ${colors.gr_bg};
+                background: ${colors.yl_bg};
                 display   : inline-block;
                 width     : 145px;
                 height    : 40px;

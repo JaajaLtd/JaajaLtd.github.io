@@ -29,15 +29,15 @@ export const Styles = styled.div`
             a {
                 i {
                     font-size: 18px;
-                    color    : ${colors.green};
+                    color    : ${colors.yellow};
                     border   : 1px solid ${colors.border1};
                     padding  : 6px;
                     border-radius : 50%;
 
                     &:hover {
-                        background  : ${colors.green};
+                        background  : ${colors.yellow};
                         color       : #ffffff;
-                        border-color: ${colors.green};
+                        border-color: ${colors.yellow};
                     }
                 }
             }
@@ -45,7 +45,7 @@ export const Styles = styled.div`
 
         .side-content {
             h5 {
-                color         : ${colors.green};
+                color         : ${colors.yellow};
                 text-transform: uppercase;
                 font-weight   : 500;
                 margin-bottom : 18px;
@@ -74,7 +74,7 @@ export const Styles = styled.div`
             margin-bottom: 40px;
 
             h5 {
-                color         : ${colors.green};
+                color         : ${colors.yellow};
                 text-transform: uppercase;
                 font-weight   : 500;
                 margin-bottom : 25px;
@@ -122,7 +122,7 @@ export const Styles = styled.div`
             margin-bottom: 32px;
 
             h5 {
-                color         : ${colors.green};
+                color         : ${colors.yellow};
                 text-transform: uppercase;
                 font-weight   : 500;
                 margin-bottom : 25px;
@@ -151,7 +151,7 @@ export const Styles = styled.div`
             margin-bottom: 20px;
 
             h5 {
-                color         : ${colors.green};
+                color         : ${colors.yellow};
                 text-transform: uppercase;
                 font-weight   : 500;
                 margin-bottom : 15px;
@@ -176,7 +176,7 @@ export const Styles = styled.div`
 
                     i {
                         font-size     : 18px;
-                        color         : ${colors.green};
+                        color         : ${colors.yellow};
                         margin-top    : 1px;
                         margin-right  : 6px;
                         vertical-align: text-bottom;
@@ -192,7 +192,7 @@ export const Styles = styled.div`
                 li {
                     a {
                         font-size  : 13px;
-                        color      : ${colors.green};
+                        color      : ${colors.yellow};
                         display    : inline-block;
                         border     : 1px solid ${colors.border1};
                         width      : 30px;
@@ -202,8 +202,8 @@ export const Styles = styled.div`
                         border-radius : 50%;
 
                         &:hover {
-                            background  : ${colors.green};
-                            border-color: ${colors.green};
+                            background  : ${colors.yellow};
+                            border-color: ${colors.yellow};
                             color       : #fff;
                         }
                     }

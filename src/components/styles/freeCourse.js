@@ -50,7 +50,7 @@ export const Styles = styled.div`
 
                 span {
                     font-size     : 48px;
-                    color         : ${colors.green};
+                    color         : ${colors.yellow};
                     display       : block;
                     letter-spacing: 0;
                     margin-top    : -12px;
@@ -86,7 +86,7 @@ export const Styles = styled.div`
             &::before {
                 position  : absolute;
                 content   : "";
-                background: ${colors.green2};
+                background: ${colors.yellow2};
                 opacity   : 0.93;
                 width     : 100%;
                 height    : 100%;
@@ -159,7 +159,7 @@ export const Styles = styled.div`
 
                     p.form-control.success {
                         input {
-                            border: 2px solid ${colors.green};
+                            border: 2px solid ${colors.yellow};
                         }
 
                         &::before {
@@ -167,7 +167,7 @@ export const Styles = styled.div`
                             content    : "\f058";
                             font-family: "Line Awesome Free";
                             font-size  : 24px;
-                            color      : ${colors.green};
+                            color      : ${colors.yellow};
                             font-weight: 900;
                             top        : 8px;
                             right      : 10px;
@@ -209,7 +209,7 @@ export const Styles = styled.div`
                         text-transform: uppercase;
 
                         &:hover {
-                            background: ${colors.green};
+                            background: ${colors.yellow};
 
                             i {
                                 color: #ffffff;

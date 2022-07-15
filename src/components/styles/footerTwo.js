@@ -49,7 +49,7 @@ export const Styles = styled.div`
 
                     i {
                         font-size     : 18px;
-                        color         : ${colors.green};
+                        color         : ${colors.yellow};
                         width         : 35px;
                         vertical-align: top;
 
@@ -97,7 +97,7 @@ export const Styles = styled.div`
 
                         i {
                             font-size   : 12px;
-                            color       : ${colors.green};
+                            color       : ${colors.yellow};
                             margin-right: 10px;
 
                             @media(max-width: 991px) {
@@ -106,7 +106,7 @@ export const Styles = styled.div`
                         }
 
                         &:hover {
-                            color: ${colors.green};
+                            color: ${colors.yellow};
                         }
                     }
                 }
@@ -144,7 +144,7 @@ export const Styles = styled.div`
                 .po-icon {
                     i {
                         font-size   : 26px;
-                        color       : ${colors.green};
+                        color       : ${colors.yellow};
                         line-height : 30px;
                         margin-right: 10px;
                     }
@@ -158,7 +158,7 @@ export const Styles = styled.div`
                         margin-bottom: 3px;
 
                         &:hover {
-                            color: ${colors.green};
+                            color: ${colors.yellow};
                         }
                     }
 
@@ -233,7 +233,7 @@ export const Styles = styled.div`
 
                     span {
                         font-size: 13px;
-                        color      : ${colors.green};
+                        color      : ${colors.yellow};
                         font-weight: 300;
                         position   : absolute;
                         bottom     : -22px;
@@ -244,7 +244,7 @@ export const Styles = styled.div`
 
                 p.form-control.success {
                     input {
-                        border: 2px solid ${colors.green};
+                        border: 2px solid ${colors.yellow};
                     }
 
                     &::before {
@@ -252,7 +252,7 @@ export const Styles = styled.div`
                         content    : "\f058";
                         font-family: "Line Awesome Free";
                         font-size  : 24px;
-                        color      : ${colors.green};
+                        color      : ${colors.yellow};
                         font-weight: 900;
                         top        : 8px;
                         right      : 10px;
@@ -285,7 +285,7 @@ export const Styles = styled.div`
                 button {
                     font-size  : 15px;
                     color      : ${colors.border1};
-                    background : ${colors.gr_bg};
+                    background : ${colors.yl_bg};
                     width      : 100%;
                     height     : 40px;
                     font-weight: 500;
@@ -310,12 +310,12 @@ export const Styles = styled.div`
                 margin-bottom: 25px;
 
                 i {
-                    color : ${colors.green};
+                    color : ${colors.yellow};
                     margin: 0 2px;
                 }
 
                 a {
-                    color: ${colors.green};
+                    color: ${colors.yellow};
 
                     &:hover {
                         text-decoration: underline;
@@ -366,14 +366,14 @@ export const Styles = styled.div`
                         }
 
                         &:hover {
-                            background-color: ${colors.green} !important;
+                            background-color: ${colors.yellow} !important;
 
                             &:before {
-                                border-bottom-color: ${colors.green} !important;
+                                border-bottom-color: ${colors.yellow} !important;
                             }
 
                             &:after {
-                                border-top-color: ${colors.green} !important;
+                                border-top-color: ${colors.yellow} !important;
                             }
                         }
                     }

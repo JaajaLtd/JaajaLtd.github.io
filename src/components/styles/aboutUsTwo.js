@@ -38,10 +38,10 @@ export const Styles = styled.div`
 
                     i {
                         font-size: 20px;
-                        color    : ${colors.green};
+                        color    : ${colors.yellow};
                         width    : 35px;
                         height   : 35px;
-                        border   : 1px solid ${colors.green};
+                        border   : 1px solid ${colors.yellow};
                         border-radius : 50%;
                         padding-top: 7px;
                     }
@@ -98,7 +98,7 @@ export const Styles = styled.div`
             p.exp-box {
                 font-size    : 14px;
                 color        : #ffffff;
-                background   : ${colors.gr_bg};
+                background   : ${colors.yl_bg};
                 position     : absolute;
                 bottom       : 15%;
                 right        : 20%;

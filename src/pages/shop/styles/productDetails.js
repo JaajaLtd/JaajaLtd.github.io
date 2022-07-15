@@ -88,7 +88,7 @@ export const Styles = styled.div`
                         margin-top: -1px;
                         a {
                             font-size: 14px;
-                            color: ${colors.green};
+                            color: ${colors.yellow};
                             font-weight: 500;
                             &:hover {
                                 color: ${colors.black1};
@@ -101,7 +101,7 @@ export const Styles = styled.div`
                     margin-bottom: 15px;
                     p.dc-price {
                         font-size: 26px;
-                        color: ${colors.green};
+                        color: ${colors.yellow};
                         font-weight: 500;
                         letter-spacing: 0;
 
@@ -138,7 +138,7 @@ export const Styles = styled.div`
                         font-size: 14px;
                         color: ${colors.text2};
                         span.stock {
-                            color: ${colors.green};
+                            color: ${colors.yellow};
                             font-weight: 500;
                             margin-left: 10px;
                         }
@@ -201,7 +201,7 @@ export const Styles = styled.div`
                             }
                             input[type="radio"]#color-4 + label {
                                 span {
-                                    background-color: ${colors.green};
+                                    background-color: ${colors.yellow};
                                 }
                             }
                             input[type="radio"]#color-5 + label {
@@ -251,8 +251,8 @@ export const Styles = styled.div`
                             }
                             input[type="radio"]:checked + label {
                                 color : #ffffff;
-                                border-color: ${colors.green};
-                                background-color: ${colors.green};
+                                border-color: ${colors.yellow};
+                                background-color: ${colors.yellow};
                             }
                         }
                     }
@@ -262,7 +262,7 @@ export const Styles = styled.div`
                     a.cart-btn {
                         font-size : 14px;
                         color: #ffffff;
-                        background: ${colors.gr_bg};
+                        background: ${colors.yl_bg};
                         display: inline-block;
                         width: 120px;
                         height: 38px;
@@ -282,15 +282,15 @@ export const Styles = styled.div`
                         height: 38px;
                         text-align: center;
                         font-size: 20px;
-                        color: ${colors.green};
+                        color: ${colors.yellow};
                         padding: 3px;
                         vertical-align: bottom;
                         border-radius: 5px;
                         margin-right: 13px;
                         &:hover {
-                            background: ${colors.gr_bg};
+                            background: ${colors.yl_bg};
                             color: #ffffff;
-                            border-color: ${colors.green};
+                            border-color: ${colors.yellow};
                         }
                     }
                     a.compare-btn {
@@ -300,15 +300,15 @@ export const Styles = styled.div`
                         height: 38px;
                         text-align: center;
                         font-size: 20px;
-                        color: ${colors.green};
+                        color: ${colors.yellow};
                         padding: 3px;
                         vertical-align: bottom;
                         border-radius: 5px;
                         margin-right: 12px;
                         &:hover {
-                            background: ${colors.gr_bg};
+                            background: ${colors.yl_bg};
                             color: #ffffff;
-                            border-color: ${colors.green};
+                            border-color: ${colors.yellow};
                         }
                     }
                 }
@@ -335,7 +335,7 @@ export const Styles = styled.div`
                             border-radius: 5px;
                         }
                         a.nav-link.active {
-                            background : ${colors.gr_bg};
+                            background : ${colors.yl_bg};
                             color : #ffffff;
                         }
                     }

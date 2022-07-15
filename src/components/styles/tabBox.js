@@ -21,12 +21,12 @@ export const Styles = styled.div`
                     padding      : 18px 25px;
 
                     i {
-                        color: ${colors.green};
+                        color: ${colors.yellow};
                     }
                 }
 
                 a.nav-link.active {
-                    background: ${colors.gr_bg};
+                    background: ${colors.yl_bg};
                     color     : #ffffff;
 
                     i {
@@ -79,7 +79,7 @@ export const Styles = styled.div`
 
                         i {
                             float : left;
-                            color : ${colors.green};
+                            color : ${colors.yellow};
                             border: 1px solid ${colors.border3};
                             width : 35px;
                             height: 35px;

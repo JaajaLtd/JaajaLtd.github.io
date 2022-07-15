@@ -47,7 +47,7 @@ export const Styles = styled.div`
 
                     li.breadcrumb-item {
                         a {
-                            color: ${colors.green};
+                            color: ${colors.yellow};
 
                             &:hover {
                                 color: #ffffff;

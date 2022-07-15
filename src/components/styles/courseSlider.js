@@ -99,7 +99,7 @@ export const Styles = styled.div`
                             margin-bottom: 12px;
 
                             &:hover {
-                                color: ${colors.green};
+                                color: ${colors.yellow};
                             }
                         }
                     }
@@ -123,7 +123,7 @@ export const Styles = styled.div`
 
                                 i {
                                     font-size     : 16px;
-                                    color         : ${colors.green};
+                                    color         : ${colors.yellow};
                                     vertical-align: text-bottom;
                                     margin-right  : 3px;
                                 }
@@ -169,7 +169,7 @@ export const Styles = styled.div`
                 }
 
                 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-                    background: ${colors.green};
+                    background: ${colors.yellow};
                 }
 
                 @media(max-width: 575px) {

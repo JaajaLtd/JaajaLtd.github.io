@@ -103,7 +103,7 @@ export const Styles = styled.div`
                                 display   : block;
                                 width     : 70px;
                                 height    : 70px;
-                                background: ${colors.green};
+                                background: ${colors.yellow};
                                 border-radius : 50%;
                                 animation: pulse-border 1500ms ease-out infinite;
                             }
@@ -118,7 +118,7 @@ export const Styles = styled.div`
                                 display   : block;
                                 width     : 70px;
                                 height    : 70px;
-                                background: ${colors.green};
+                                background: ${colors.yellow};
                                 border-radius : 50%;
                                 transition : all 200ms;
                             }

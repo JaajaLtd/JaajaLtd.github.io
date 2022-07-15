@@ -41,7 +41,7 @@ export const Styles = styled.div`
                         p {
                             a {
                                 font-size: 14px;
-                                color: ${colors.green};
+                                color: ${colors.yellow};
                                 font-weight: 500;
                                 &:hover {
                                     color: ${colors.black1};
@@ -60,7 +60,7 @@ export const Styles = styled.div`
                             font-weight: 500;
                             i {
                                 font-size : 20px;
-                                color: ${colors.green};
+                                color: ${colors.yellow};
                                 vertical-align: top;
                             }
 
@@ -69,7 +69,7 @@ export const Styles = styled.div`
                                 color: ${colors.text2};
                                 font-weight: 500;
                                 &:hover {
-                                    color: ${colors.green};
+                                    color: ${colors.yellow};
                                 }
                             }
                         }
@@ -108,7 +108,7 @@ export const Styles = styled.div`
                                 margin-left: -20px;
                                 font-size : 30px;
                                 color : #ffffff;
-                                background : ${colors.gr_bg};
+                                background : ${colors.yl_bg};
                                 width: 42px;
                                 height: 42px;
                                 text-align: center;
@@ -126,7 +126,7 @@ export const Styles = styled.div`
                             margin-bottom: 15px;
                             i {
                                 float: left;
-                                color: ${colors.green};
+                                color: ${colors.yellow};
                                 border: 1px solid ${colors.border3};
                                 width: 35px;
                                 height: 35px;
@@ -153,7 +153,7 @@ export const Styles = styled.div`
                                     font-size: 14px;
                                     color: ${colors.text2};
                                     &:hover {
-                                        color: ${colors.green};
+                                        color: ${colors.yellow};
                                     }
                                 }
                                 &:first-child {
@@ -212,14 +212,14 @@ export const Styles = styled.div`
                                     }
 
                                     &:hover {
-                                        background-color: ${colors.green} !important;
+                                        background-color: ${colors.yellow} !important;
 
                                         &:before {
-                                            border-bottom-color: ${colors.green} !important;
+                                            border-bottom-color: ${colors.yellow} !important;
                                         }
 
                                         &:after {
-                                            border-top-color: ${colors.green} !important;
+                                            border-top-color: ${colors.yellow} !important;
                                         }
                                     }
                                 }
@@ -324,7 +324,7 @@ export const Styles = styled.div`
                         &:before {
                             position: absolute;
                             content: "";
-                            background: ${colors.green};
+                            background: ${colors.yellow};
                             width: 50px;
                             height: 2px;
                             bottom: 0;
@@ -359,7 +359,7 @@ export const Styles = styled.div`
                                 .reply-btn {
                                     button {
                                         font-size : 14px;
-                                        color: ${colors.green};
+                                        color: ${colors.yellow};
                                         background : transparent;
                                         border : 1px solid ${colors.border3};
                                         font-weight: 500;
@@ -372,8 +372,8 @@ export const Styles = styled.div`
                                         }
                                         &:hover {
                                             color : #ffffff;
-                                            background : ${colors.gr_bg};
-                                            border-color : ${colors.green};
+                                            background : ${colors.yl_bg};
+                                            border-color : ${colors.yellow};
                                         }
                                     }
                                 }

@@ -43,7 +43,7 @@ export const Styles = styled.div`
 
                     i {
                         font-size     : 18px;
-                        color         : ${colors.green};
+                        color         : ${colors.yellow};
                         width         : 35px;
                         vertical-align: top;
                     }
@@ -80,12 +80,12 @@ export const Styles = styled.div`
 
                         i {
                             font-size   : 12px;
-                            color       : ${colors.green};
+                            color       : ${colors.yellow};
                             margin-right: 10px;
                         }
 
                         &:hover {
-                            color: ${colors.green};
+                            color: ${colors.yellow};
                         }
 
                         @media(max-width: 991px) {
@@ -134,7 +134,7 @@ export const Styles = styled.div`
                         margin-bottom: 10px;
 
                         &:hover {
-                            color: ${colors.green};
+                            color: ${colors.yellow};
                         }
 
                         @media(max-width: 991px) {
@@ -167,12 +167,12 @@ export const Styles = styled.div`
                 padding-top: 3px;
 
                 i {
-                    color : ${colors.green};
+                    color : ${colors.yellow};
                     margin: 0 2px;
                 }
 
                 a {
-                    color: ${colors.green};
+                    color: ${colors.yellow};
 
                     &:hover {
                         text-decoration: underline;
@@ -227,14 +227,14 @@ export const Styles = styled.div`
                     }
 
                     &:hover {
-                        background-color: ${colors.green} !important;
+                        background-color: ${colors.yellow} !important;
 
                         &:before {
-                            border-bottom-color: ${colors.green} !important;
+                            border-bottom-color: ${colors.yellow} !important;
                         }
 
                         &:after {
-                            border-top-color: ${colors.green} !important;
+                            border-top-color: ${colors.yellow} !important;
                         }
                     }
                 }

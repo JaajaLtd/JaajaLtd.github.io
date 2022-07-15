@@ -34,7 +34,7 @@ export const Styles = styled.div`
                         p {
                             a {
                                 font-size: 14px;
-                                color: ${colors.green};
+                                color: ${colors.yellow};
                                 font-weight: 500;
                                 &:hover {
                                     color: ${colors.black1};
@@ -57,7 +57,7 @@ export const Styles = styled.div`
                             font-weight: 500;
                             i {
                                 font-size : 20px;
-                                color: ${colors.green};
+                                color: ${colors.yellow};
                                 vertical-align: top;
                             }
                         }
@@ -81,7 +81,7 @@ export const Styles = styled.div`
                             color: ${colors.black1};
                             line-height: 32px;
                             &:hover {
-                                color: ${colors.green};
+                                color: ${colors.yellow};
                             }
 
                             @media(max-width: 991px) {
@@ -148,7 +148,7 @@ export const Styles = styled.div`
                             p {
                                 a {
                                     font-size: 13px;
-                                    color: ${colors.green};
+                                    color: ${colors.yellow};
                                     font-weight: 500;
                                     &:hover {
                                         color: ${colors.black1};
@@ -170,7 +170,7 @@ export const Styles = styled.div`
                                 font-weight: 500;
                                 i {
                                     font-size : 20px;
-                                    color: ${colors.green};
+                                    color: ${colors.yellow};
                                     vertical-align: top;
                                 }
                             }
@@ -188,7 +188,7 @@ export const Styles = styled.div`
                                 color: ${colors.black1};
                                 line-height: 25px;
                                 &:hover {
-                                    color: ${colors.green};
+                                    color: ${colors.yellow};
                                 }
 
                                 @media(max-width: 767px) {

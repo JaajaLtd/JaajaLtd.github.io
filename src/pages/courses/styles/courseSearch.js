@@ -17,7 +17,7 @@ export const Styles = styled.div`
             &:before {
                 position : absolute;
                 content : "";
-                background : ${colors.green};
+                background : ${colors.yellow};
                 width : 50px;
                 height: 2px;
                 bottom : 0;
@@ -37,7 +37,7 @@ export const Styles = styled.div`
                 color : ${colors.black1};
                 padding-left: 15px;
                 &:focus {
-                    border-color : ${colors.green};
+                    border-color : ${colors.yellow};
                 }
                 &::placeholder {
                     font-size  : 14px;
@@ -56,7 +56,7 @@ export const Styles = styled.div`
                 padding: 0;
                 border: none;
                 font-size: 20px;
-                color: ${colors.green};
+                color: ${colors.yellow};
             }
         }
 

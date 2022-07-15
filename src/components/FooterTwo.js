@@ -120,7 +120,7 @@ function FooterTwo() {
                         </Col>
                         <Col md="12">
                             <div className="copytext-area text-center">
-                                <p>Copyright &copy; 2017 | Designed With <i className="las la-heart"></i> by <a href={process.env.PUBLIC_URL + "/"} target="_blank" rel="noopener noreferrer">SnazzyTheme</a></p>
+                                <p>Copyright &copy; 2022 MOES | HESMIS </p>
                                 <ul className="social list-unstyled list-inline">
                                     <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-facebook-f"></i></a></li>
                                     <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-twitter"></i></a></li>

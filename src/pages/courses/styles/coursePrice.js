@@ -16,7 +16,7 @@ export const Styles = styled.div`
             &:before {
                 position : absolute;
                 content : "";
-                background : ${colors.green};
+                background : ${colors.yellow};
                 width : 50px;
                 height: 2px;
                 bottom : 0;
@@ -59,9 +59,9 @@ export const Styles = styled.div`
                         }
 
                         &:checked {
-                            background-color: ${colors.green};
-                            background: ${colors.green} url("data:image/gif;base64,R0lGODlhCwAKAIABAP////3cnSH5BAEKAAEALAAAAAALAAoAAAIUjH+AC73WHIsw0UCjglraO20PNhYAOw==") 2px 2px no-repeat;
-                            border-color : ${colors.green};
+                            background-color: ${colors.yellow};
+                            background: ${colors.yellow} url("data:image/gif;base64,R0lGODlhCwAKAIABAP////3cnSH5BAEKAAEALAAAAAALAAoAAAIUjH+AC73WHIsw0UCjglraO20PNhYAOw==") 2px 2px no-repeat;
+                            border-color : ${colors.yellow};
                         }
                     }
 

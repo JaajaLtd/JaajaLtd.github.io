@@ -26,7 +26,7 @@ export const Styles = styled.div`
                         }
                     }
                     a.nav-link.active {
-                        background : ${colors.gr_bg};
+                        background : ${colors.yl_bg};
                         color : #ffffff;
                     }
 
@@ -47,7 +47,7 @@ export const Styles = styled.div`
                         .faq-title {
                             margin-bottom: 13px;
                             .title-icon {
-                                background: ${colors.green};
+                                background: ${colors.yellow};
                                 height: 20px;
                                 text-align: center;
                                 margin-right: 12px;
@@ -73,7 +73,7 @@ export const Styles = styled.div`
                                     border-style: solid;
                                     border-top-color: transparent;
                                     border-right-color: transparent;
-                                    border-bottom-color: ${colors.green};
+                                    border-bottom-color: ${colors.yellow};
                                     border-left-color: transparent;
                                     top: -20px;
                                     left: 0;
@@ -89,7 +89,7 @@ export const Styles = styled.div`
                                     position: absolute;
                                     border-width: 10px 18px;
                                     border-style: solid;
-                                    border-top-color: ${colors.green};
+                                    border-top-color: ${colors.yellow};
                                     border-right-color: transparent;
                                     border-bottom-color: transparent;
                                     border-left-color: transparent;

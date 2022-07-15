@@ -9,7 +9,7 @@ export const Styles = styled.div`
             position: relative;
 
             .newsletter-box {
-                background: ${colors.gr_bg};
+                background: ${colors.yl_bg};
                 padding   : 37px 40px 40px;
                 border-radius : 5px;
                 position: absolute;
@@ -77,7 +77,7 @@ export const Styles = styled.div`
 
                     p.form-control.success {
                         input {
-                            border: 2px solid ${colors.green};
+                            border: 2px solid ${colors.yellow};
                         }
 
                         &::before {
@@ -85,7 +85,7 @@ export const Styles = styled.div`
                             content    : "\f058";
                             font-family: "Line Awesome Free";
                             font-size  : 24px;
-                            color      : ${colors.green};
+                            color      : ${colors.yellow};
                             font-weight: 900;
                             top        : 8px;
                             right      : 10px;
@@ -128,14 +128,14 @@ export const Styles = styled.div`
 
                         i {
                             font-size     : 22px;
-                            color         : ${colors.green};
+                            color         : ${colors.yellow};
                             margin-right  : 5px;
                             vertical-align: text-bottom;
                             line-height   : 19px;
                         }
 
                         &:hover {
-                            background: ${colors.green};
+                            background: ${colors.yellow};
 
                             i {
                                 color: #ffffff;

@@ -17,7 +17,7 @@ export const Styles = styled.div`
             &:before {
                 position : absolute;
                 content : "";
-                background : ${colors.green};
+                background : ${colors.yellow};
                 width : 50px;
                 height: 2px;
                 bottom : 0;
@@ -55,7 +55,7 @@ export const Styles = styled.div`
                             color: ${colors.black2};
                             font-weight: 500;
                             &:hover {
-                                color : ${colors.green};
+                                color : ${colors.yellow};
                             }
                         }
                     }
@@ -73,7 +73,7 @@ export const Styles = styled.div`
 
                     p.price {
                         font-size : 15px;
-                        color : ${colors.green};
+                        color : ${colors.yellow};
                         font-weight : 500;
                     }
                 }
