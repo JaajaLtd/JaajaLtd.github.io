@@ -25,6 +25,7 @@ import BlogDetails from './pages/blog/BlogDetails';
 import Product from './pages/shop/Products';
 import ProductDetails from './pages/shop/ProductDetails';
 import Cart from './pages/shop/Cart';
+import AdminDashboard from './src/App';
 
 function App() {
     return (
@@ -55,6 +56,7 @@ function App() {
                 <Route path={`${process.env.PUBLIC_URL + "/products"}`} component={Product} />
                 <Route path={`${process.env.PUBLIC_URL + "/product-details"}`} component={ProductDetails} />
                 <Route path={`${process.env.PUBLIC_URL + "/cart"}`} component={Cart} />
+                <Route path={`${process.env.PUBLIC_URL + "/dashboard"}`} component={AdminDashboard} />
             </Switch>
         </Router>
     )

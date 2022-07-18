@@ -20,7 +20,7 @@ class HeaderTwo extends Component {
                                     <ul className="list-unstyled list-inline">
                                         <li className="list-inline-item"><i className="las la-phone"></i>+1 (396) 486 4709</li>
                                         <li className="list-inline-item"><i className="las la-envelope"></i>enquery@domain.com</li>
-                                        <li className="list-inline-item"><i className="las la-map-marker"></i>795 South Park Avenue, CA
+                                        <li className="list-inline-item"><i className="las la-map-marker"></i>Kampala, Uganda
                                     </li>
                                     </ul>
                                 </div>

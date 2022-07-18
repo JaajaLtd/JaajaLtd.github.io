@@ -1,0 +1,30 @@
+const enrollment = {
+  GET_CURRENT_EVENTS_REQUEST: 'GET_CURRENT_EVENTS_REQUEST',
+  GET_CURRENT_EVENTS_SUCCESS: 'GET_CURRENT_EVENTS_SUCCESS',
+  GET_CURRENT_EVENTS_ERROR: 'GET_CURRENT_EVENTS_ERROR',
+
+  GET_ENROLLMENT_HISTORY_REQUEST: 'GET_ENROLLMENT_HISTORY_REQUEST',
+  GET_ENROLLMENT_HISTORY_SUCCESS: 'GET_ENROLLMENT_HISTORY_SUCCESS',
+  GET_ENROLLMENT_HISTORY_ERROR: 'GET_ENROLLMENT_HISTORY_ERROR',
+
+  ENROLL_STUDENT_REQUEST: 'ENROLL_STUDENT_REQUEST',
+  ENROLL_STUDENT_SUCCESS: 'ENROLL_STUDENT_SUCCESS',
+  ENROLL_STUDENT_ERROR: 'ENROLL_STUDENT_ERROR',
+
+  getCurrentEvents: (currentStudentProgrammeId) => ({
+    type: enrollment.GET_CURRENT_EVENTS_REQUEST,
+    currentStudentProgrammeId,
+  }),
+
+  getEnrollmentHistory: (currentStudentProgrammeId) => ({
+    type: enrollment.GET_ENROLLMENT_HISTORY_REQUEST,
+    currentStudentProgrammeId,
+  }),
+
+  enrollStudent: (data) => ({
+    type: enrollment.ENROLL_STUDENT_REQUEST,
+    data,
+  }),
+};
+
+export default enrollment;

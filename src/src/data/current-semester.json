@@ -1,0 +1,8 @@
+{
+    "currentSemesterError": {
+        "server": {
+            "message": "Resource Not Found!"
+        }
+    },
+    "gettingCurrentSemester": false
+}

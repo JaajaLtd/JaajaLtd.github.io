@@ -18,7 +18,7 @@ class Header extends Component {
                             <Col lg="6" md="5">
                                 <div className="bar-left">
                                     <ul className="list-unstyled list-inline">
-                                        <li className="list-inline-item"><i className="las la-map-marker"></i>795 South Park Avenue, CA 94107.</li>
+                                        <li className="list-inline-item"><i className="las la-map-marker"></i>Kampala, Uganda.</li>
                                         <li className="list-inline-item"><Link to={process.env.PUBLIC_URL + "/faq"}>Have Questions</Link></li>
                                     </ul>
                                 </div>
@@ -81,7 +81,7 @@ class Header extends Component {
                                         </div>
                                         <div className="box-content">
                                             <p>Enquery Us</p>
-                                            <span>enquery@edulyn.com</span>
+                                            <span>enquery@hesmis.com</span>
                                         </div>
                                     </div>
                                     <div className="apply-btn">

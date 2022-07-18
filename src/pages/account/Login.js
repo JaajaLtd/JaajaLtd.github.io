@@ -1,50 +1,81 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import HeaderTwo from '../../components/HeaderTwo';
 import { BreadcrumbBox } from '../../components/common/Breadcrumb';
 import FooterTwo from '../../components/FooterTwo';
 import { Styles } from './styles/account.js';
+import { useDispatch, useSelector } from 'react-redux';
+import { useCookies } from 'react-cookie';
+import usePrevious from '../../src/containers/Hooks/usePrevious';
+import { authActions } from '../../src/config/actions';
+import RoutePaths from '../../src/config/routes/RoutePaths';
+import { removeEmptyOrNullObject } from '../../src/helpers/dataFormatter';
+import { isEmpty, get } from 'lodash';
+import { useForm } from 'react-hook-form';
+import { FaSignInAlt } from 'react-icons/fa';
 
 function Login() {
+    const { register, handleSubmit, errors } = useForm();
+    const loginIn = useSelector((state) => state.auth.loginIn);
+    const dispatch = useDispatch()
+    const [error, setError] = useState(null)
+    const [cookies, setCookie] = useCookies();
+    const { loginError, loginData, isAuthenticated } = useSelector(
+        (state) => state.auth
+    );
+    const previousState = usePrevious({ loginError, loginData });
+    const accessToken = cookies.auth_access;
+
     useEffect(() => {
-        const form = document.getElementById("form_login");
-        const user = document.getElementById("login_user");
-        const password = document.getElementById("login_password");
+        if (!isEmpty(accessToken?.token) && isAuthenticated === true) {
+            dispatch(authActions.setIsAuthenticated(true));
+        }
+    }, []);
 
-        form.addEventListener("submit", formSubmit);
-
-        function formSubmit(e) {
-            e.preventDefault();
-
-            const userValue = user.value.trim();
-            const passwordValue = password.value.trim();
-
-            if (userValue === "") {
-                setError(user, "User can't be blank");
-            } else {
-                setSuccess(user);
-            }
-
-            if (passwordValue === "") {
-                setError(password, "Password can't be blank");
-            } else {
-                setSuccess(password);
+    useEffect(() => {
+        if (
+            !isEmpty(previousState) &&
+            !isEmpty(loginData) &&
+            previousState.loginData !== loginData
+        ) {
+            if (loginData.server?.status === true) {
+                setCookie('auth_access', loginData.access_token, {
+                    path: '/dashboard',
+                    sameSite: true,
+                });
+                dispatch(authActions.setIsAuthenticated(true));
             }
         }
+    }, [loginData]);
 
-        function setError(input, message) {
-            const formControl = input.parentElement;
-            const errorMsg = formControl.querySelector(".login_input-msg");
-            formControl.className = "form-control text-left error";
-            errorMsg.innerText = message;
-        }
+    useEffect(() => {
+        if (
+            !isEmpty(previousState) &&
+            !isEmpty(loginError) &&
+            previousState.loginError !== loginError
+        ) {
+            const message =
+                loginError.error?.message ||
+                loginError.error ||
+                loginError.server.message;
+            setError(message);
 
-        function setSuccess(input) {
-            const formControl = input.parentElement;
-            formControl.className = "form-control success";
+            if (message === 'Please change your default password before login in.') {
+                setTimeout(() => {
+                    //  setCurrentPage(RoutePaths.resetPassword.path);
+                }, 2000);
+            }
         }
-    });
+    }, [loginError]);
+
+    const onSubmit = (data) => {
+        console.log(data)
+        setError(null);
+        if (!isEmpty(data)) {
+            dispatch(authActions.loginUser(removeEmptyOrNullObject(data)));
+        }
+    };
 
     return (
         <Styles>
@@ -66,18 +97,34 @@ function Login() {
                                     <div className="login-title text-center">
                                         <h3>Log In</h3>
                                     </div>
-                                    <form id="form_login" className="form">
-                                        <p className="form-control">
+                                    <form id="form_login" className="form" onSubmit={handleSubmit(onSubmit)}>
+                                        <p className="form-control my-4">
                                             <label htmlFor="login_user">User Name</label>
-                                            <input type="text" placeholder="Username" id="login_user" />
+                                            <input
+                                                type="text"
+                                                placeholder="Email"
+                                                name="email"
+                                                id="login_user"
+                                                {...register("email",{
+                                                    required: 'Email field is required',
+                                                })}
+                                            />
                                             <span className="login_input-msg"></span>
                                         </p>
-                                        <p className="form-control">
+                                        <p className="form-control my-4">
                                             <label htmlFor="login_password">Password</label>
-                                            <input type="password" placeholder="*******" id="login_password" />
+                                            <input
+                                                type="password"
+                                                name="password"
+                                                placeholder="*******"
+                                                id="login_password"
+                                                {...register("password",{
+                                                    required: 'Password is required',
+                                                })}
+                                            />
                                             <span className="login_input-msg"></span>
                                         </p>
-                                        <button>Log In</button>
+                                        <button className="my-4"                                        >Log In</button>
                                         <div className="save-forget-password d-flex justify-content-between">
                                             <div className="save-passowrd">
                                                 <label htmlFor="save_password"><input type="checkbox" id="save_password" className="check-box" />Save Password</label>
@@ -86,16 +133,8 @@ function Login() {
                                                 <Link to={process.env.PUBLIC_URL + "/"}>Forget Password?</Link>
                                             </div>
                                         </div>
-                                        <div className="not_account-btn text-center">
+                                        <div className="not_account-btn text-center my-2">
                                             <p>Haven't Any Account Yet? <Link to={process.env.PUBLIC_URL + "/registration"}>Click Here</Link></p>
-                                        </div>
-                                        <div className="social-login text-center">
-                                            <p>Login With Social</p>
-                                            <ul className="list-unstyled list-inline">
-                                                <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-google"></i> Google</a></li>
-                                                <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-facebook-f"></i> Facebook</a></li>
-                                                <li className="list-inline-item"><a href={process.env.PUBLIC_URL + "/"}><i className="fab fa-twitter"></i> Twitter</a></li>
-                                            </ul>
                                         </div>
                                     </form>
                                 </div>

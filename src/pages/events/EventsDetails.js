@@ -36,7 +36,7 @@ class EventDetails extends Component {
                                             <ul className="list-unstyled list-inline">
                                                 <li className="list-inline-item"><i className="las la-calendar"></i> 19 February, 2021</li>
                                                 <li className="list-inline-item"><i className="las la-clock"></i> 10:30am</li>
-                                                <li className="list-inline-item"><i className="las la-map-marker"></i> 795 South Park Avenue, CA</li>
+                                                <li className="list-inline-item"><i className="las la-map-marker"></i> Kampala, Uganda</li>
                                                 <li className="list-inline-item"><i className="las la-copy"></i> Social Science</li>
                                             </ul>
                                         </div>

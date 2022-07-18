@@ -54,7 +54,7 @@ function FooterTwo() {
                                 <img src={process.env.PUBLIC_URL + "/assets/images/f-logo.png"} alt="" className="img-fluid" />
                                 <p>Lorem ipsum dolor sit amet, consectet adipisicing elit. Saepe porro neque a nam null quos.</p>
                                 <ul className="list-unstyled">
-                                    <li><i className="las la-map-marker"></i>795 South Park Avenue, CA 94107</li>
+                                    <li><i className="las la-map-marker"></i>Kampala, Uganda</li>
                                     <li><i className="las la-envelope"></i>enquery@domain.com</li>
                                     <li><i className="las la-phone"></i>+1 908 875 7678</li>
                                 </ul>

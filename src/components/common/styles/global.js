@@ -1,5 +1,5 @@
 /*===========================================
-Template Name: Edulyn - React Education Template
+Template Name: HESMIS - React Education Template
 Author: Md Tahmidur Rahman
 Author URL: http://snazzytheme.com/
 Version: 1.0
